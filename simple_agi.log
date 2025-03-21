@@ -1,0 +1,938 @@
+2025-03-21 10:34:24,073 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:34:24,073 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:34:24,074 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 24 nodes và 29 edges
+2025-03-21 10:34:24,074 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 24 nodes và 29 edges
+2025-03-21 10:34:24,074 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:34:24,074 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:34:24,074 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:34:24,074 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:34:24,074 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:34:24,076 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:34:24,076 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:5000
+2025-03-21 10:35:31,220 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:37:35,902 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:37:35,903 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:37:35,905 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 24 nodes và 29 edges
+2025-03-21 10:37:35,905 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 24 nodes và 29 edges
+2025-03-21 10:37:35,905 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:37:35,905 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:37:35,905 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:37:35,905 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:37:35,905 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:37:35,907 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:37:35,907 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:37:35,927 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:37:35,927 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:37:58,141 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:37:58,147 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:37:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:37:58,165 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:37:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-21 10:38:01,891 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:38:01,894 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:38:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:38:14,401 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:38:14,402 - werkzeug - INFO - 192.168.1.190 - - [21/Mar/2025 10:38:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:38:14,415 - werkzeug - INFO - 192.168.1.190 - - [21/Mar/2025 10:38:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-21 10:38:28,910 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:38:33,239 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:38:33,239 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:38:33,240 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 24 nodes và 29 edges
+2025-03-21 10:38:33,240 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 24 nodes và 29 edges
+2025-03-21 10:38:33,240 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:38:33,240 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:38:33,240 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:38:33,240 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:38:33,241 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:38:33,241 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:38:33,241 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:38:33,252 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:38:33,252 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:38:37,274 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:38:37,279 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:38:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:39:02,260 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:40:30,270 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:40:30,270 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:40:30,271 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 24 nodes và 29 edges
+2025-03-21 10:40:30,271 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 24 nodes và 29 edges
+2025-03-21 10:40:30,271 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:40:30,271 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:40:30,271 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:40:30,271 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:40:30,271 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:40:30,272 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:40:30,272 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:40:30,280 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:40:30,280 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:40:31,660 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:40:31,664 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:40:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:40:33,709 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:40:33,712 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:40:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:40:33,924 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:40:33,927 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:40:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:40:34,103 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:40:34,106 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:40:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:41:16,664 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:41:21,611 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:41:21,611 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:41:21,612 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 24 nodes và 29 edges
+2025-03-21 10:41:21,612 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 24 nodes và 29 edges
+2025-03-21 10:41:21,612 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:41:21,612 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:41:21,612 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:41:21,612 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:41:21,612 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:41:21,615 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:41:21,615 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:41:21,623 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:41:21,623 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:41:22,969 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:41:22,972 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:41:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:41:24,715 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:41:24,718 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:41:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:41:25,263 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:41:25,266 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:41:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:41:25,475 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:41:25,478 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:41:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:41:25,654 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-03-21 10:41:25,656 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:41:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:42:40,239 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:42:44,309 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:42:44,309 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:42:44,310 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 24 nodes và 29 edges
+2025-03-21 10:42:44,310 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 24 nodes và 29 edges
+2025-03-21 10:42:44,310 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:42:44,310 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:42:44,310 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:42:44,310 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:42:44,310 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:42:44,311 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:42:44,311 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:42:44,318 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:42:44,318 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:42:48,492 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('/Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html
+2025-03-21 10:42:48,495 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:42:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:42:50,099 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('/Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html
+2025-03-21 10:42:50,102 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:42:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:42:50,266 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('/Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html
+2025-03-21 10:42:50,269 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:42:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:42:50,439 - ui.web - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quannguyen/Downloads/AI-AGI/simple_agi/ui/web.py", line 67, in index
+    return render_template('/Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /Users/quannguyen/Downloads/AI-AGI/simple_agi/templates/index.html
+2025-03-21 10:42:50,442 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:42:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-21 10:43:07,524 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:43:49,777 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:43:49,777 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:43:49,778 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 24 nodes và 29 edges
+2025-03-21 10:43:49,778 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 24 nodes và 29 edges
+2025-03-21 10:43:49,778 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:43:49,778 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:43:49,778 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:43:49,778 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:43:49,778 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:43:49,779 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:43:49,779 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:43:49,786 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:43:49,786 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:43:51,528 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:43:51] "GET / HTTP/1.1" 200 -
+2025-03-21 10:43:51,536 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:43:51] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 10:43:51,537 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:43:51] "GET /api/history?limit=5 HTTP/1.1" 200 -
+2025-03-21 10:43:58,084 - AGIWeb - INFO - Nhận câu hỏi từ web: 3+2
+2025-03-21 10:43:58,084 - AGIEngine - INFO - Xử lý yêu cầu: 3+2
+2025-03-21 10:43:58,084 - KnowledgeBase - INFO - Truy vấn KB với: 3+2
+2025-03-21 10:43:58,084 - NLPUtils - WARNING - Lỗi khi sử dụng SpaCy: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory., chuyển sang phương pháp đơn giản
+2025-03-21 10:43:58,086 - NLPUtils - WARNING - Lỗi khi sử dụng NLTK: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/quannguyen/nltk_data'
+    - '/Library/Frameworks/Python.framework/Versions/3.12/nltk_data'
+    - '/Library/Frameworks/Python.framework/Versions/3.12/share/nltk_data'
+    - '/Library/Frameworks/Python.framework/Versions/3.12/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+, chuyển sang phương pháp đơn giản
+2025-03-21 10:43:58,086 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 10:43:58,086 - AGIEngine - INFO - Không đủ thông tin, bắt đầu thu thập
+2025-03-21 10:43:58,086 - InfoCollector - INFO - Thu thập thông tin cho query: 3+2
+2025-03-21 10:43:58,086 - InfoCollector - INFO - Bắt đầu thu thập từ Web (cần thêm 3 nguồn)
+2025-03-21 10:43:58,086 - WebScraper - INFO - Thu thập từ web cho query: 3+2
+2025-03-21 10:43:58,086 - WebScraper - INFO - Mô phỏng tìm kiếm cho: 3+2
+2025-03-21 10:44:03,837 - WebScraper - INFO - Đã thu thập được 3 thông tin từ web
+2025-03-21 10:44:03,837 - InfoCollector - INFO - Đã thu thập được 3 thông tin từ Web
+2025-03-21 10:44:03,837 - InfoCollector - INFO - Đã thu thập được tổng cộng 3 thông tin mới trong 5.75 giây
+2025-03-21 10:44:03,838 - AGIEngine - INFO - Học 3 thông tin mới
+2025-03-21 10:44:03,838 - Learner - INFO - Bắt đầu quá trình học với 3 thông tin mới
+2025-03-21 10:44:03,841 - KnowledgeBase - INFO - Đã lưu đồ thị kiến thức với 28 nodes và 32 edges
+2025-03-21 10:44:03,842 - KnowledgeBase - INFO - Truy vấn KB với: 3+2
+2025-03-21 10:44:03,844 - NLPUtils - WARNING - Lỗi khi sử dụng SpaCy: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory., chuyển sang phương pháp đơn giản
+2025-03-21 10:44:03,844 - NLPUtils - WARNING - Lỗi khi sử dụng NLTK: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/quannguyen/nltk_data'
+    - '/Library/Frameworks/Python.framework/Versions/3.12/nltk_data'
+    - '/Library/Frameworks/Python.framework/Versions/3.12/share/nltk_data'
+    - '/Library/Frameworks/Python.framework/Versions/3.12/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+, chuyển sang phương pháp đơn giản
+2025-03-21 10:44:03,844 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 10:44:03,844 - Reasoner - INFO - Suy luận dựa trên 0 kết quả từ KB
+2025-03-21 10:44:03,845 - AGIEngine - INFO - Đã xử lý yêu cầu trong 5.76 giây
+2025-03-21 10:44:03,846 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:44:03] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 10:44:03,851 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:44:03] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 10:45:35,644 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:46:39,132 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:46:39,132 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:46:39,133 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 28 nodes và 32 edges
+2025-03-21 10:46:39,133 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 28 nodes và 32 edges
+2025-03-21 10:46:39,133 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:46:39,133 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:46:39,133 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:46:39,133 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:46:39,133 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:46:39,134 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:46:39,134 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:46:39,141 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:46:39,141 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:46:49,002 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:46:49] "GET / HTTP/1.1" 200 -
+2025-03-21 10:46:49,008 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:46:49] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 10:46:49,009 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:46:49] "GET /api/history?limit=5 HTTP/1.1" 200 -
+2025-03-21 10:46:55,839 - AGIWeb - INFO - Nhận câu hỏi từ web: 3+2
+2025-03-21 10:46:55,840 - AGIEngine - INFO - Xử lý yêu cầu: 3+2
+2025-03-21 10:46:55,840 - KnowledgeBase - INFO - Truy vấn KB với: 3+2
+2025-03-21 10:46:56,147 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 10:46:56,147 - AGIEngine - INFO - Không đủ thông tin, bắt đầu thu thập
+2025-03-21 10:46:56,147 - InfoCollector - INFO - Thu thập thông tin cho query: 3+2
+2025-03-21 10:46:56,147 - InfoCollector - INFO - Bắt đầu thu thập từ Web (cần thêm 3 nguồn)
+2025-03-21 10:46:56,147 - WebScraper - INFO - Thu thập từ web cho query: 3+2
+2025-03-21 10:46:56,147 - WebScraper - INFO - Mô phỏng tìm kiếm cho: 3+2
+2025-03-21 10:47:03,098 - WebScraper - INFO - Đã thu thập được 3 thông tin từ web
+2025-03-21 10:47:03,099 - InfoCollector - INFO - Đã thu thập được 3 thông tin từ Web
+2025-03-21 10:47:03,100 - InfoCollector - INFO - Đã thu thập được tổng cộng 3 thông tin mới trong 6.95 giây
+2025-03-21 10:47:03,100 - AGIEngine - INFO - Học 3 thông tin mới
+2025-03-21 10:47:03,100 - Learner - INFO - Bắt đầu quá trình học với 3 thông tin mới
+2025-03-21 10:47:03,104 - KnowledgeBase - INFO - Đã lưu đồ thị kiến thức với 28 nodes và 32 edges
+2025-03-21 10:47:03,104 - KnowledgeBase - INFO - Truy vấn KB với: 3+2
+2025-03-21 10:47:03,417 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 10:47:03,417 - Reasoner - INFO - Suy luận dựa trên 0 kết quả từ KB
+2025-03-21 10:47:03,417 - AGIEngine - INFO - Đã xử lý yêu cầu trong 7.58 giây
+2025-03-21 10:47:03,417 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:47:03] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 10:47:03,423 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:47:03] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 10:56:31,394 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 10:56:38,837 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 10:56:38,837 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 10:56:38,838 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 59 nodes và 66 edges
+2025-03-21 10:56:38,838 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 59 nodes và 66 edges
+2025-03-21 10:56:38,839 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 10:56:38,839 - ApiConnector - WARNING - Không có API nào được cấu hình hoặc có sẵn
+2025-03-21 10:56:38,839 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 10:56:38,839 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 10:56:38,839 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 10:56:38,840 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 10:56:38,840 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 10:56:38,855 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 10:56:38,855 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 10:56:40,137 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:56:40] "GET / HTTP/1.1" 200 -
+2025-03-21 10:56:40,144 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:56:40] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 10:56:40,146 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:56:40] "GET /api/history?limit=5 HTTP/1.1" 200 -
+2025-03-21 10:56:46,168 - AGIWeb - INFO - Nhận câu hỏi từ web: 1+2
+2025-03-21 10:56:46,168 - AGIEngine - INFO - Xử lý yêu cầu: 1+2
+2025-03-21 10:56:46,168 - KnowledgeBase - INFO - Truy vấn KB với: 1+2
+2025-03-21 10:56:46,633 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 10:56:46,633 - AGIEngine - INFO - Không đủ thông tin, bắt đầu thu thập
+2025-03-21 10:56:46,633 - InfoCollector - INFO - Thu thập thông tin cho query: 1+2
+2025-03-21 10:56:46,633 - InfoCollector - INFO - Bắt đầu thu thập từ Web (cần thêm 3 nguồn)
+2025-03-21 10:56:46,633 - WebScraper - INFO - Thu thập từ web cho query: 1+2
+2025-03-21 10:56:46,633 - WebScraper - INFO - Mô phỏng tìm kiếm cho: 1+2
+2025-03-21 10:56:52,793 - WebScraper - INFO - Đã thu thập được 3 thông tin từ web
+2025-03-21 10:56:52,794 - InfoCollector - INFO - Đã thu thập được 3 thông tin từ Web
+2025-03-21 10:56:52,794 - InfoCollector - INFO - Đã thu thập được tổng cộng 3 thông tin mới trong 6.16 giây
+2025-03-21 10:56:52,794 - AGIEngine - INFO - Học 3 thông tin mới
+2025-03-21 10:56:52,794 - Learner - INFO - Bắt đầu quá trình học với 3 thông tin mới
+2025-03-21 10:56:52,798 - KnowledgeBase - INFO - Đã lưu đồ thị kiến thức với 60 nodes và 69 edges
+2025-03-21 10:56:52,799 - KnowledgeBase - INFO - Truy vấn KB với: 1+2
+2025-03-21 10:56:53,159 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 10:56:53,159 - Reasoner - INFO - Suy luận dựa trên 0 kết quả từ KB
+2025-03-21 10:56:53,159 - AGIEngine - INFO - Đã xử lý yêu cầu trong 6.99 giây
+2025-03-21 10:56:53,159 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:56:53] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 10:56:53,165 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 10:56:53] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:07:20,701 - AGIWeb - INFO - Đã nhận tín hiệu thoát
+2025-03-21 11:09:57,066 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 11:09:57,066 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 11:09:57,067 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 60 nodes và 69 edges
+2025-03-21 11:09:57,067 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 60 nodes và 69 edges
+2025-03-21 11:09:57,068 - SimpleAGI - ERROR - Lỗi khởi động: module 'config' has no attribute 'USER_AGENT'

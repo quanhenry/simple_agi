@@ -1,0 +1,16 @@
+networkx
+requests
+nltk
+spacy
+beautifulsoup4
+google-generativeai
+openai
+anthropic
+flask
+transformers
+torch
+numpy
+pandas
+scikit-learn
+pytest
+python-dotenv

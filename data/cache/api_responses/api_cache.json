@@ -1,0 +1,119 @@
+{
+    "cache_info": {
+      "created_at": "2025-03-21T10:00:00",
+      "last_updated": "2025-03-21T10:30:00",
+      "entry_count": 3
+    },
+    "entries": {
+      "phep_cong_la_gi_hash123456": {
+        "query": "Phép cộng là gì?",
+        "timestamp": "2025-03-21T10:15:00",
+        "expires_at": "2025-03-28T10:15:00",
+        "source": "openai",
+        "response": {
+          "title": "Thông tin về Phép cộng",
+          "content": "Phép cộng là phép toán cơ bản nhằm tìm tổng của hai hay nhiều số. Trong toán học cấp 1, phép cộng được biểu diễn bằng dấu '+' đặt giữa các số hạng. Kết quả của phép cộng được gọi là tổng. Ví dụ: 3 + 4 = 7, trong đó 3 và 4 là các số hạng, 7 là tổng.",
+          "source": "openai",
+          "timestamp": 1711011300,
+          "confidence": 0.95,
+          "entities": [
+            {
+              "name": "Phép cộng",
+              "type": "concept",
+              "description": "Phép toán cơ bản nhằm tìm tổng của hai hay nhiều số"
+            },
+            {
+              "name": "Tổng",
+              "type": "concept",
+              "description": "Kết quả của phép cộng"
+            }
+          ],
+          "relations": [
+            {
+              "source": "Phép cộng",
+              "target": "Tổng",
+              "relation_type": "produces",
+              "description": "Phép cộng cho ra kết quả là tổng"
+            }
+          ]
+        }
+      },
+      "hinh_vuong_la_gi_hash789012": {
+        "query": "Hình vuông là gì?",
+        "timestamp": "2025-03-21T10:25:00",
+        "expires_at": "2025-03-28T10:25:00",
+        "source": "google_gemini",
+        "response": {
+          "title": "Thông tin về Hình vuông",
+          "content": "Hình vuông là tứ giác có bốn cạnh bằng nhau và bốn góc đều là góc vuông (90 độ). Hình vuông là một trường hợp đặc biệt của hình chữ nhật khi cả bốn cạnh bằng nhau. Chu vi của hình vuông bằng 4 lần độ dài cạnh, và diện tích bằng bình phương độ dài cạnh.",
+          "source": "google_gemini",
+          "timestamp": 1711011900,
+          "confidence": 0.92,
+          "entities": [
+            {
+              "name": "Hình vuông",
+              "type": "concept",
+              "description": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông"
+            },
+            {
+              "name": "Hình chữ nhật",
+              "type": "concept",
+              "description": "Tứ giác có bốn góc vuông"
+            }
+          ],
+          "relations": [
+            {
+              "source": "Hình chữ nhật",
+              "target": "Hình vuông",
+              "relation_type": "generalizes",
+              "description": "Hình vuông là trường hợp đặc biệt của hình chữ nhật"
+            }
+          ]
+        }
+      },
+      "van_hoc_la_gi_hash345678": {
+        "query": "Văn học là gì?",
+        "timestamp": "2025-03-21T10:30:00",
+        "expires_at": "2025-03-28T10:30:00",
+        "source": "anthropic_claude",
+        "response": {
+          "title": "Thông tin về Văn học",
+          "content": "Văn học là tập hợp các tác phẩm viết hoặc nói có giá trị nghệ thuật, bao gồm thơ, truyện, tiểu thuyết, và nhiều thể loại khác. Trong chương trình tiểu học, văn học giúp học sinh phát triển khả năng đọc hiểu, tưởng tượng và năng lực cảm thụ nghệ thuật. Văn học cũng giúp truyền tải các giá trị đạo đức, văn hóa và lịch sử.",
+          "source": "anthropic_claude",
+          "timestamp": 1711012200,
+          "confidence": 0.93,
+          "entities": [
+            {
+              "name": "Văn học",
+              "type": "concept",
+              "description": "Tập hợp các tác phẩm viết hoặc nói có giá trị nghệ thuật"
+            },
+            {
+              "name": "Thơ",
+              "type": "concept",
+              "description": "Thể loại văn học sử dụng ngôn ngữ có vần điệu"
+            },
+            {
+              "name": "Truyện",
+              "type": "concept",
+              "description": "Thể loại văn học kể về các sự kiện và nhân vật"
+            }
+          ],
+          "relations": [
+            {
+              "source": "Văn học",
+              "target": "Thơ",
+              "relation_type": "contains",
+              "description": "Văn học bao gồm thể loại thơ"
+            },
+            {
+              "source": "Văn học",
+              "target": "Truyện",
+              "relation_type": "contains",
+              "description": "Văn học bao gồm thể loại truyện"
+            }
+          ]
+        }
+      }
+    }
+  }

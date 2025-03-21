@@ -1,0 +1,86 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "name": "Toán cấp 1",
+        "type": "subject",
+        "description": "Môn Toán dành cho học sinh tiểu học bao gồm các kiến thức cơ bản về số học, hình học và giải toán có lời văn.",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00",
+        "updated_at": "2025-03-20T10:00:00",
+        "id": "subject_math_primary"
+      },
+      {
+        "name": "Tiếng Việt cấp 1",
+        "type": "subject",
+        "description": "Môn Tiếng Việt dành cho học sinh tiểu học bao gồm các kiến thức về đọc, viết, ngữ pháp và văn học.",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00",
+        "updated_at": "2025-03-20T10:00:00",
+        "id": "subject_vietnamese_primary"
+      },
+      {
+        "name": "Số tự nhiên",
+        "type": "concept",
+        "description": "Số tự nhiên là các số nguyên không âm bắt đầu từ 0 (hoặc 1, tùy theo định nghĩa) và tiếp tục với 1, 2, 3,...",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00",
+        "updated_at": "2025-03-20T10:00:00",
+        "id": "concept_natural_numbers"
+      },
+      {
+        "name": "Phép cộng",
+        "type": "concept",
+        "description": "Phép cộng là phép toán cơ bản nhằm tìm tổng của hai hay nhiều số.",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00",
+        "updated_at": "2025-03-20T10:00:00",
+        "id": "concept_addition"
+      },
+      {
+        "name": "Phép trừ",
+        "type": "concept",
+        "description": "Phép trừ là phép toán cơ bản nhằm tìm hiệu của hai số.",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00",
+        "updated_at": "2025-03-20T10:00:00",
+        "id": "concept_subtraction"
+      }
+    ],
+    "links": [
+      {
+        "source": "subject_math_primary",
+        "target": "concept_natural_numbers",
+        "relation_type": "contains",
+        "description": "Toán cấp 1 bao gồm kiến thức về số tự nhiên",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00"
+      },
+      {
+        "source": "subject_math_primary",
+        "target": "concept_addition",
+        "relation_type": "contains",
+        "description": "Toán cấp 1 bao gồm kiến thức về phép cộng",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00"
+      },
+      {
+        "source": "subject_math_primary",
+        "target": "concept_subtraction",
+        "relation_type": "contains",
+        "description": "Toán cấp 1 bao gồm kiến thức về phép trừ",
+        "origin": "initialization",
+        "confidence": 1.0,
+        "created_at": "2025-03-20T10:00:00"
+      }
+    ]
+  }

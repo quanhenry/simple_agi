@@ -1,0 +1,132 @@
+{
+    "cache_info": {
+      "created_at": "2025-03-21T10:00:00",
+      "last_updated": "2025-03-21T11:00:00",
+      "entry_count": 3
+    },
+    "entries": {
+      "https://vi.wikipedia.org/wiki/Phân_số": {
+        "url": "https://vi.wikipedia.org/wiki/Phân_số",
+        "timestamp": "2025-03-21T10:45:00",
+        "expires_at": "2025-03-28T10:45:00",
+        "title": "Phân số - Wikipedia",
+        "excerpt": "Phân số là một số biểu diễn bằng tỷ số của hai số nguyên, bao gồm tử số và mẫu số. Các phân số được sử dụng để biểu diễn các phần của một đơn vị hoặc các phần của một tập hợp.",
+        "content": "Phân số là một số biểu diễn bằng tỷ số của hai số nguyên, bao gồm tử số và mẫu số. Trong biểu diễn phân số a/b, a được gọi là tử số và b được gọi là mẫu số, với b khác 0. Phân số được dùng để biểu diễn các phần của một đơn vị hoặc các phần của một tập hợp.\n\nPhân số thường được biểu diễn dưới dạng a/b hoặc a÷b hoặc $\\frac{a}{b}$. Các phân số có thể được so sánh, cộng, trừ, nhân và chia. Phân số cũng có thể được chuyển đổi sang dạng số thập phân bằng cách thực hiện phép chia tử số cho mẫu số.\n\nMột phân số được gọi là phân số tối giản nếu tử số và mẫu số không có ước chung lớn hơn 1. Để tối giản một phân số, ta chia cả tử số và mẫu số cho ước chung lớn nhất của chúng.",
+        "domain": "wikipedia.org",
+        "content_hash": "a1b2c3d4e5f6g7h8i9j0",
+        "entities": [
+          {
+            "name": "Phân số",
+            "type": "concept",
+            "description": "Một số biểu diễn bằng tỷ số của hai số nguyên"
+          },
+          {
+            "name": "Tử số",
+            "type": "concept",
+            "description": "Số ở phần trên của phân số"
+          },
+          {
+            "name": "Mẫu số",
+            "type": "concept",
+            "description": "Số ở phần dưới của phân số"
+          }
+        ],
+        "relations": [
+          {
+            "source": "Phân số",
+            "target": "Tử số",
+            "relation_type": "has_component",
+            "description": "Phân số bao gồm tử số ở phần trên"
+          },
+          {
+            "source": "Phân số",
+            "target": "Mẫu số",
+            "relation_type": "has_component",
+            "description": "Phân số bao gồm mẫu số ở phần dưới"
+          }
+        ]
+      },
+      "https://vi.wikipedia.org/wiki/Chính_tả": {
+        "url": "https://vi.wikipedia.org/wiki/Chính_tả",
+        "timestamp": "2025-03-21T10:55:00",
+        "expires_at": "2025-03-28T10:55:00",
+        "title": "Chính tả - Wikipedia",
+        "excerpt": "Chính tả là cách viết đúng từ ngữ theo quy định chung của ngôn ngữ. Chính tả quan trọng trong việc dạy và học ngôn ngữ, đặc biệt là đối với trẻ em ở cấp tiểu học.",
+        "content": "Chính tả là cách viết đúng từ ngữ theo quy định chung của ngôn ngữ. Trong tiếng Việt, chính tả bao gồm các quy tắc về viết hoa, dấu câu, cách viết từ, v.v. Chính tả quan trọng trong việc dạy và học ngôn ngữ, đặc biệt là đối với trẻ em ở cấp tiểu học.\n\nViệc viết đúng chính tả giúp người đọc hiểu đúng ý của người viết, tránh gây hiểu nhầm hoặc khó hiểu. Trong tiếng Việt, việc viết đúng dấu thanh và các quy tắc viết hoa đặc biệt quan trọng vì chúng có thể thay đổi hoàn toàn ý nghĩa của từ.\n\nChương trình tiếng Việt ở cấp tiểu học chú trọng dạy chính tả qua các bài tập đọc, viết và chính tả. Các lỗi chính tả phổ biến ở học sinh tiểu học bao gồm viết sai dấu thanh, nhầm lẫn giữa các từ đồng âm khác nghĩa, và sai quy tắc viết hoa.",
+        "domain": "wikipedia.org",
+        "content_hash": "k1l2m3n4o5p6q7r8s9t0",
+        "entities": [
+          {
+            "name": "Chính tả",
+            "type": "concept",
+            "description": "Cách viết đúng từ ngữ theo quy định chung của ngôn ngữ"
+          },
+          {
+            "name": "Dấu thanh",
+            "type": "concept",
+            "description": "Các dấu trong tiếng Việt gồm: sắc, huyền, hỏi, ngã, nặng"
+          }
+        ],
+        "relations": [
+          {
+            "source": "Chính tả",
+            "target": "Viết",
+            "relation_type": "is_aspect_of",
+            "description": "Chính tả là một khía cạnh quan trọng của kỹ năng viết"
+          }
+        ]
+      },
+      "https://vi.wikipedia.org/wiki/Tam_giác": {
+        "url": "https://vi.wikipedia.org/wiki/Tam_giác",
+        "timestamp": "2025-03-21T11:00:00",
+        "expires_at": "2025-03-28T11:00:00",
+        "title": "Tam giác - Wikipedia",
+        "excerpt": "Tam giác là đa giác có ba cạnh và ba góc. Tổng ba góc trong tam giác luôn bằng 180 độ.",
+        "content": "Tam giác là đa giác có ba cạnh và ba góc. Trong hình học phẳng, tam giác là một hình được tạo thành bởi ba điểm không thẳng hàng và ba đoạn thẳng nối các điểm đó với nhau.\n\nMột tính chất quan trọng của tam giác là tổng ba góc trong tam giác luôn bằng 180 độ (hoặc π radian). Tam giác có thể được phân loại theo các cạnh (tam giác đều, tam giác cân, tam giác thường) hoặc theo các góc (tam giác vuông, tam giác tù, tam giác nhọn).\n\nTrong chương trình toán tiểu học, học sinh làm quen với khái niệm tam giác và tính chất cơ bản của nó. Học sinh học cách nhận biết các loại tam giác, đo chu vi và tính diện tích tam giác đơn giản.",
+        "domain": "wikipedia.org",
+        "content_hash": "u1v2w3x4y5z6a7b8c9d0",
+        "entities": [
+          {
+            "name": "Tam giác",
+            "type": "concept",
+            "description": "Đa giác có ba cạnh và ba góc"
+          },
+          {
+            "name": "Tam giác đều",
+            "type": "concept",
+            "description": "Tam giác có ba cạnh bằng nhau và ba góc bằng nhau"
+          },
+          {
+            "name": "Tam giác cân",
+            "type": "concept",
+            "description": "Tam giác có hai cạnh bằng nhau"
+          },
+          {
+            "name": "Tam giác vuông",
+            "type": "concept",
+            "description": "Tam giác có một góc vuông (90 độ)"
+          }
+        ],
+        "relations": [
+          {
+            "source": "Tam giác",
+            "target": "Tam giác đều",
+            "relation_type": "has_type",
+            "description": "Tam giác đều là một loại tam giác"
+          },
+          {
+            "source": "Tam giác",
+            "target": "Tam giác cân",
+            "relation_type": "has_type",
+            "description": "Tam giác cân là một loại tam giác"
+          },
+          {
+            "source": "Tam giác",
+            "target": "Tam giác vuông",
+            "relation_type": "has_type",
+            "description": "Tam giác vuông là một loại tam giác"
+          }
+        ]
+      }
+    }
+  }

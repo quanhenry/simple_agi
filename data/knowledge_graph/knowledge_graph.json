@@ -1,0 +1,1212 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "name": "Toán cấp 1",
+      "type": "subject",
+      "description": "Môn Toán dành cho học sinh tiểu học bao gồm các kiến thức cơ bản về số học, hình học và giải toán có lời văn.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "subject_math_primary"
+    },
+    {
+      "name": "Tiếng Việt cấp 1",
+      "type": "subject",
+      "description": "Môn Tiếng Việt dành cho học sinh tiểu học bao gồm các kiến thức về đọc, viết, ngữ pháp và văn học.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "subject_vietnamese_primary"
+    },
+    {
+      "name": "Số tự nhiên",
+      "type": "concept",
+      "description": "Số tự nhiên là các số nguyên không âm bắt đầu từ 0 (hoặc 1, tùy theo định nghĩa) và tiếp tục với 1, 2, 3,...",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_natural_numbers"
+    },
+    {
+      "name": "Phép cộng",
+      "type": "concept",
+      "description": "Phép cộng là phép toán cơ bản nhằm tìm tổng của hai hay nhiều số.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_addition"
+    },
+    {
+      "name": "Phép trừ",
+      "type": "concept",
+      "description": "Phép trừ là phép toán cơ bản nhằm tìm hiệu của hai số.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_subtraction"
+    },
+    {
+      "name": "Phép nhân",
+      "type": "concept",
+      "description": "Phép nhân là phép toán cơ bản nhằm tìm tích của hai hay nhiều số.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_multiplication"
+    },
+    {
+      "name": "Phép chia",
+      "type": "concept",
+      "description": "Phép chia là phép toán cơ bản nhằm tìm thương của hai số.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_division"
+    },
+    {
+      "name": "Hình học",
+      "type": "concept",
+      "description": "Hình học là nhánh của toán học nghiên cứu về các hình dạng, kích thước, vị trí tương đối của các đối tượng và tính chất của không gian.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_geometry"
+    },
+    {
+      "name": "Đo lường",
+      "type": "concept",
+      "description": "Đo lường là quá trình xác định độ lớn, số lượng hoặc mức độ của một đối tượng.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_measurement"
+    },
+    {
+      "name": "Chữ cái và âm",
+      "type": "concept",
+      "description": "Chữ cái là các ký hiệu trong bảng chữ cái, mỗi chữ cái tương ứng với một hoặc một số âm nhất định.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_letters_sounds"
+    },
+    {
+      "name": "Từ và câu",
+      "type": "concept",
+      "description": "Từ là đơn vị ngôn ngữ có nghĩa, câu là tập hợp các từ được sắp xếp theo quy tắc để diễn đạt một ý tưởng hoàn chỉnh.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_words_sentences"
+    },
+    {
+      "name": "Ngữ pháp",
+      "type": "concept",
+      "description": "Ngữ pháp là tập hợp các quy tắc về cách sử dụng từ và cấu trúc câu trong một ngôn ngữ.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_grammar"
+    },
+    {
+      "name": "Văn học",
+      "type": "concept",
+      "description": "Văn học là tập hợp các tác phẩm viết hoặc nói có giá trị nghệ thuật, bao gồm thơ, truyện, tiểu thuyết, v.v.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_literature"
+    },
+    {
+      "name": "Đọc hiểu",
+      "type": "concept",
+      "description": "Đọc hiểu là khả năng đọc và hiểu ý nghĩa của văn bản.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_reading_comprehension"
+    },
+    {
+      "name": "Viết",
+      "type": "concept",
+      "description": "Viết là khả năng diễn đạt ý tưởng, suy nghĩ bằng ngôn từ trong văn bản.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_writing"
+    },
+    {
+      "name": "Hình vuông",
+      "type": "concept",
+      "description": "Hình vuông là tứ giác có bốn cạnh bằng nhau và bốn góc đều là góc vuông (90 độ).",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_square"
+    },
+    {
+      "name": "Hình tam giác",
+      "type": "concept",
+      "description": "Hình tam giác là đa giác có ba cạnh và ba góc.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_triangle"
+    },
+    {
+      "name": "Hình tròn",
+      "type": "concept",
+      "description": "Hình tròn là hình phẳng gồm tất cả các điểm có cùng khoảng cách từ một điểm cho trước gọi là tâm.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_circle"
+    },
+    {
+      "name": "Chu vi",
+      "type": "concept",
+      "description": "Chu vi là tổng độ dài các cạnh của một hình phẳng.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_perimeter"
+    },
+    {
+      "name": "Diện tích",
+      "type": "concept",
+      "description": "Diện tích là số đo kích thước mặt phẳng của một hình.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_area"
+    },
+    {
+      "name": "Thơ",
+      "type": "concept",
+      "description": "Thơ là một thể loại văn học sử dụng các yếu tố như vần điệu, nhịp điệu và ngôn ngữ để truyền tải ý nghĩa và cảm xúc.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_poetry"
+    },
+    {
+      "name": "Truyện",
+      "type": "concept",
+      "description": "Truyện là một thể loại văn học kể về các sự kiện, nhân vật và hành động, có thể là thực hoặc hư cấu.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_story"
+    },
+    {
+      "name": "Bảng cửu chương",
+      "type": "concept",
+      "description": "Bảng cửu chương là bảng tổng hợp kết quả của phép nhân các số từ 1 đến 10 (hoặc từ 1 đến 9), thường được học thuộc để tính toán nhanh.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_multiplication_table"
+    },
+    {
+      "name": "Hình chữ nhật",
+      "type": "concept",
+      "description": "Hình chữ nhật là tứ giác có bốn góc vuông và các cạnh đối song song và bằng nhau.",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "updated_at": "2025-03-21T10:00:00",
+      "id": "concept_rectangle"
+    },
+    {
+      "name": "Trí tuệ nhân tạo Wikipedia tiếng Việt",
+      "type": "concept",
+      "description": "Đóng mở mục lục Trí tuệ nhân tạo 164 ngôn ngữ Afrikaans Alemannisch አማርኛ العربية Aragonés Արեւմտահայերէն অসম য Asturianu Avañe'ẽ Azərbaycanca تۆرکجه Bahasa Indonesia Bahasa Melayu ব ল 閩南語 Bân-lâm-gú Б",
+      "source": "vi.wikipedia.org",
+      "confidence": 0.7,
+      "created_at": "2025-03-21T10:44:03.838515",
+      "updated_at": "2025-03-21T10:56:52.794901",
+      "id": "concept_eedcf93a76"
+    },
+    {
+      "name": "3+2",
+      "type": "context",
+      "created_at": "2025-03-21T10:44:03.838616",
+      "updated_at": "2025-03-21T10:44:03.838620",
+      "id": "context_91aeddc2d2"
+    },
+    {
+      "name": "Our Documentation Python.org",
+      "type": "concept",
+      "description": "Beginner Beginner s Guide Python FAQs Moderate Python Periodicals Python Books Advanced Python Packaging User Guide In-development Docs Guido s Essays General PEP Index Python Videos Developer s Guide",
+      "source": "www.python.org",
+      "confidence": 0.7,
+      "created_at": "2025-03-21T10:44:03.838675",
+      "updated_at": "2025-03-21T10:56:52.795056",
+      "id": "concept_cbcba7207e"
+    },
+    {
+      "name": "artificial-intelligence GitHub Topics GitHub",
+      "type": "concept",
+      "description": "Explore Topics Trending Collections Events GitHub Sponsors artificial-intelligence Star The branch of computer science dealing with the reproduction, or mimicking of human-level intelligence, self-awa",
+      "source": "github.com",
+      "confidence": 0.7,
+      "created_at": "2025-03-21T10:44:03.838719",
+      "updated_at": "2025-03-21T10:56:52.795130",
+      "id": "concept_f72dcd487a"
+    },
+    {
+      "name": "Phép cộng trong phạm vi 10",
+      "type": "concept",
+      "description": "Phép cộng các số từ 0 đến 10, bao gồm các phép tính như 1+1=2, 2+3=5, 4+5=9, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_addition_within_10"
+    },
+    {
+      "name": "Phép cộng trong phạm vi 20",
+      "type": "concept",
+      "description": "Phép cộng các số từ 0 đến 20, bao gồm các phép tính như 10+5=15, 7+8=15, 9+9=18, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_addition_within_20"
+    },
+    {
+      "name": "Phép cộng trong phạm vi 100",
+      "type": "concept",
+      "description": "Phép cộng các số từ 0 đến 100, bao gồm các phép tính như 23+45=68, 50+30=80, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_addition_within_100"
+    },
+    {
+      "name": "Phép trừ trong phạm vi 10",
+      "type": "concept",
+      "description": "Phép trừ các số từ 0 đến 10, bao gồm các phép tính như 5-2=3, 10-4=6, 7-7=0, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_subtraction_within_10"
+    },
+    {
+      "name": "Phép trừ trong phạm vi 20",
+      "type": "concept",
+      "description": "Phép trừ các số từ 0 đến 20, bao gồm các phép tính như 15-7=8, 20-12=8, 18-9=9, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_subtraction_within_20"
+    },
+    {
+      "name": "Phép trừ trong phạm vi 100",
+      "type": "concept",
+      "description": "Phép trừ các số từ 0 đến 100, bao gồm các phép tính như 45-23=22, 80-30=50, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_subtraction_within_100"
+    },
+    {
+      "name": "Số chẵn",
+      "type": "concept",
+      "description": "Số chẵn là số tự nhiên chia hết cho 2, bao gồm 0, 2, 4, 6, 8, 10, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_even_numbers"
+    },
+    {
+      "name": "Số lẻ",
+      "type": "concept",
+      "description": "Số lẻ là số tự nhiên không chia hết cho 2, bao gồm 1, 3, 5, 7, 9, 11, v.v.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_odd_numbers"
+    },
+    {
+      "name": "Hàng đơn vị",
+      "type": "concept",
+      "description": "Hàng đơn vị là vị trí số ngoài cùng bên phải trong một số, đại diện cho giá trị từ 0 đến 9.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_ones_place"
+    },
+    {
+      "name": "Hàng chục",
+      "type": "concept",
+      "description": "Hàng chục là vị trí số thứ hai từ phải sang trong một số, mỗi đơn vị ở hàng chục có giá trị bằng 10.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_tens_place"
+    },
+    {
+      "name": "Phương pháp ghi nhớ",
+      "type": "concept",
+      "description": "Phương pháp làm phép cộng, phép trừ có nhớ, khi tổng hoặc hiệu tại một hàng vượt quá 9 hoặc nhỏ hơn 0.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_carry_borrow"
+    },
+    {
+      "name": "Thứ tự số",
+      "type": "concept",
+      "description": "Thứ tự của các số tự nhiên, bao gồm khái niệm số đứng trước, số đứng sau, số lớn hơn, số nhỏ hơn.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_number_order"
+    },
+    {
+      "name": "Số từ 0 đến 100",
+      "type": "concept",
+      "description": "Tập hợp các số tự nhiên từ 0 đến 100, cách đọc và viết các số này.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_numbers_0_to_100"
+    },
+    {
+      "name": "Đơn vị đo độ dài",
+      "type": "concept",
+      "description": "Các đơn vị đo độ dài cơ bản như xăng-ti-mét (cm), mét (m), và mối quan hệ giữa chúng.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_length_units"
+    },
+    {
+      "name": "Đồng hồ và thời gian",
+      "type": "concept",
+      "description": "Cách đọc đồng hồ, các đơn vị thời gian như giờ, phút, và mối quan hệ giữa chúng.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_time_clock"
+    },
+    {
+      "name": "Tiền tệ",
+      "type": "concept",
+      "description": "Các mệnh giá tiền Việt Nam, cách tính toán với tiền.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_money"
+    },
+    {
+      "name": "Bài toán có lời văn",
+      "type": "concept",
+      "description": "Các bài toán thực tế được diễn đạt bằng lời văn, yêu cầu học sinh phân tích và giải quyết.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_word_problems"
+    },
+    {
+      "name": "So sánh số",
+      "type": "concept",
+      "description": "Cách so sánh độ lớn của các số tự nhiên, sử dụng các ký hiệu >, <, =.",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "concept_number_comparison"
+    },
+    {
+      "name": "Phép cộng 1+1",
+      "type": "knowledge",
+      "description": "1+1=2",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_1_plus_1"
+    },
+    {
+      "name": "Phép cộng 2+2",
+      "type": "knowledge",
+      "description": "2+2=4",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_2_plus_2"
+    },
+    {
+      "name": "Phép cộng 3+2",
+      "type": "knowledge",
+      "description": "3+2=5",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_3_plus_2"
+    },
+    {
+      "name": "Phép cộng 3+3",
+      "type": "knowledge",
+      "description": "3+3=6",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_3_plus_3"
+    },
+    {
+      "name": "Phép cộng 4+4",
+      "type": "knowledge",
+      "description": "4+4=8",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_4_plus_4"
+    },
+    {
+      "name": "Phép cộng 5+5",
+      "type": "knowledge",
+      "description": "5+5=10",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_5_plus_5"
+    },
+    {
+      "name": "Phép cộng 6+4",
+      "type": "knowledge",
+      "description": "6+4=10",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_6_plus_4"
+    },
+    {
+      "name": "Phép cộng 7+3",
+      "type": "knowledge",
+      "description": "7+3=10",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_7_plus_3"
+    },
+    {
+      "name": "Phép cộng 8+2",
+      "type": "knowledge",
+      "description": "8+2=10",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_8_plus_2"
+    },
+    {
+      "name": "Phép cộng 9+1",
+      "type": "knowledge",
+      "description": "9+1=10",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_9_plus_1"
+    },
+    {
+      "name": "Phép trừ 5-2",
+      "type": "knowledge",
+      "description": "5-2=3",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_5_minus_2"
+    },
+    {
+      "name": "Phép trừ 10-5",
+      "type": "knowledge",
+      "description": "10-5=5",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_10_minus_5"
+    },
+    {
+      "name": "Phép trừ 8-3",
+      "type": "knowledge",
+      "description": "8-3=5",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "updated_at": "2025-03-21T11:00:00",
+      "id": "knowledge_8_minus_3"
+    },
+    {
+      "name": "1+2",
+      "type": "context",
+      "created_at": "2025-03-21T10:56:52.794961",
+      "updated_at": "2025-03-21T10:56:52.794968",
+      "id": "context_433f7ee31e"
+    }
+  ],
+  "links": [
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm kiến thức về số tự nhiên",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_natural_numbers"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm kiến thức về phép cộng",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_addition"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm kiến thức về phép trừ",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_subtraction"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm kiến thức về phép nhân",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_multiplication"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm kiến thức về phép chia",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_division"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm kiến thức về hình học",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_geometry"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm kiến thức về đo lường",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_measurement"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Toán cấp 1 bao gồm các bài toán có lời văn",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "subject_math_primary",
+      "target": "concept_word_problems"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Tiếng Việt cấp 1 bao gồm kiến thức về chữ cái và âm",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_vietnamese_primary",
+      "target": "concept_letters_sounds"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Tiếng Việt cấp 1 bao gồm kiến thức về từ và câu",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_vietnamese_primary",
+      "target": "concept_words_sentences"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Tiếng Việt cấp 1 bao gồm kiến thức về ngữ pháp",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_vietnamese_primary",
+      "target": "concept_grammar"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Tiếng Việt cấp 1 bao gồm kiến thức về văn học",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_vietnamese_primary",
+      "target": "concept_literature"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Tiếng Việt cấp 1 bao gồm kỹ năng đọc hiểu",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_vietnamese_primary",
+      "target": "concept_reading_comprehension"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Tiếng Việt cấp 1 bao gồm kỹ năng viết",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "subject_vietnamese_primary",
+      "target": "concept_writing"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Số tự nhiên bao gồm số chẵn",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_natural_numbers",
+      "target": "concept_even_numbers"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Số tự nhiên bao gồm số lẻ",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_natural_numbers",
+      "target": "concept_odd_numbers"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Số tự nhiên bao gồm số từ 0 đến 100",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_natural_numbers",
+      "target": "concept_numbers_0_to_100"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Số tự nhiên có thứ tự cụ thể",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_natural_numbers",
+      "target": "concept_number_order"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng và phép trừ là hai phép toán ngược nhau",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_addition",
+      "target": "concept_subtraction"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Phép cộng bao gồm phép cộng trong phạm vi 10",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition",
+      "target": "concept_addition_within_10"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Phép cộng bao gồm phép cộng trong phạm vi 20",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition",
+      "target": "concept_addition_within_20"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Phép cộng bao gồm phép cộng trong phạm vi 100",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition",
+      "target": "concept_addition_within_100"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Phép trừ bao gồm phép trừ trong phạm vi 10",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_subtraction",
+      "target": "concept_subtraction_within_10"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Phép trừ bao gồm phép trừ trong phạm vi 20",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_subtraction",
+      "target": "concept_subtraction_within_20"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Phép trừ bao gồm phép trừ trong phạm vi 100",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_subtraction",
+      "target": "concept_subtraction_within_100"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép nhân và phép chia là hai phép toán ngược nhau",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_multiplication",
+      "target": "concept_division"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép nhân có thể được coi là phép cộng lặp lại nhiều lần",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_multiplication",
+      "target": "concept_addition"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Hình học bao gồm kiến thức về hình vuông",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_geometry",
+      "target": "concept_square"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Hình học bao gồm kiến thức về hình tam giác",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_geometry",
+      "target": "concept_triangle"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Hình học bao gồm kiến thức về hình tròn",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_geometry",
+      "target": "concept_circle"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Hình học bao gồm kiến thức về hình chữ nhật",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_geometry",
+      "target": "concept_rectangle"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Hình học liên quan đến khái niệm chu vi",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_geometry",
+      "target": "concept_perimeter"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Hình học liên quan đến khái niệm diện tích",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_geometry",
+      "target": "concept_area"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Đo lường bao gồm đơn vị đo độ dài",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_measurement",
+      "target": "concept_length_units"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Đo lường bao gồm đồng hồ và thời gian",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_measurement",
+      "target": "concept_time_clock"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Đo lường bao gồm tiền tệ",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_measurement",
+      "target": "concept_money"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Văn học bao gồm thể loại thơ",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_literature",
+      "target": "concept_poetry"
+    },
+    {
+      "relation_type": "contains",
+      "description": "Văn học bao gồm thể loại truyện",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_literature",
+      "target": "concept_story"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Đọc hiểu và viết là hai kỹ năng bổ trợ cho nhau",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_reading_comprehension",
+      "target": "concept_writing"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Bảng cửu chương là công cụ để ghi nhớ kết quả của phép nhân",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_multiplication_table",
+      "target": "concept_multiplication"
+    },
+    {
+      "relation_type": "generalizes",
+      "description": "Hình vuông là trường hợp đặc biệt của hình chữ nhật khi cả bốn cạnh bằng nhau",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_rectangle",
+      "target": "concept_square"
+    },
+    {
+      "relation_type": "has_property",
+      "description": "Hình chữ nhật có thuộc tính chu vi bằng tổng độ dài bốn cạnh",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_rectangle",
+      "target": "concept_perimeter"
+    },
+    {
+      "relation_type": "has_property",
+      "description": "Hình chữ nhật có thuộc tính diện tích bằng tích chiều dài và chiều rộng",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T10:00:00",
+      "source": "concept_rectangle",
+      "target": "concept_area"
+    },
+    {
+      "confidence": 1.0,
+      "relation_type": "related_to",
+      "created_at": "2025-03-21T10:47:03.100811",
+      "source": "context_91aeddc2d2",
+      "target": "concept_eedcf93a76"
+    },
+    {
+      "confidence": 1.0,
+      "relation_type": "related_to",
+      "created_at": "2025-03-21T10:47:03.100994",
+      "source": "context_91aeddc2d2",
+      "target": "concept_cbcba7207e"
+    },
+    {
+      "confidence": 1.0,
+      "relation_type": "related_to",
+      "created_at": "2025-03-21T10:47:03.101079",
+      "source": "context_91aeddc2d2",
+      "target": "concept_f72dcd487a"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng 3+2 trả về kết quả 5",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "context_91aeddc2d2",
+      "target": "knowledge_3_plus_2"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 1+1",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_1_plus_1"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 2+2",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_2_plus_2"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 3+2",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_3_plus_2"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 3+3",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_3_plus_3"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 4+4",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_4_plus_4"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 5+5",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_5_plus_5"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 6+4",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_6_plus_4"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 7+3",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_7_plus_3"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 8+2",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_8_plus_2"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép cộng trong phạm vi 10 liên quan đến 9+1",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_addition_within_10",
+      "target": "knowledge_9_plus_1"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép trừ trong phạm vi 10 liên quan đến 5-2",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_subtraction_within_10",
+      "target": "knowledge_5_minus_2"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép trừ trong phạm vi 10 liên quan đến 10-5",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_subtraction_within_10",
+      "target": "knowledge_10_minus_5"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép trừ trong phạm vi 10 liên quan đến 8-3",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_subtraction_within_10",
+      "target": "knowledge_8_minus_3"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Hàng đơn vị và hàng chục là khái niệm quan trọng trong cách biểu diễn số",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_ones_place",
+      "target": "concept_tens_place"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phương pháp ghi nhớ được sử dụng trong phép cộng và phép trừ",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_carry_borrow",
+      "target": "concept_addition"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phương pháp ghi nhớ được sử dụng trong phép cộng và phép trừ",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_carry_borrow",
+      "target": "concept_subtraction"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Thứ tự số liên quan đến việc so sánh số",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_number_order",
+      "target": "concept_number_comparison"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Bài toán có lời văn sử dụng phép cộng để giải quyết",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_word_problems",
+      "target": "concept_addition"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Bài toán có lời văn sử dụng phép trừ để giải quyết",
+      "origin": "manual_addition",
+      "confidence": 1.0,
+      "created_at": "2025-03-21T11:00:00",
+      "source": "concept_word_problems",
+      "target": "concept_subtraction"
+    },
+    {
+      "confidence": 1.0,
+      "relation_type": "related_to",
+      "created_at": "2025-03-21T10:56:52.794993",
+      "source": "context_433f7ee31e",
+      "target": "concept_eedcf93a76"
+    },
+    {
+      "confidence": 1.0,
+      "relation_type": "related_to",
+      "created_at": "2025-03-21T10:56:52.795084",
+      "source": "context_433f7ee31e",
+      "target": "concept_cbcba7207e"
+    },
+    {
+      "confidence": 1.0,
+      "relation_type": "related_to",
+      "created_at": "2025-03-21T10:56:52.795152",
+      "source": "context_433f7ee31e",
+      "target": "concept_f72dcd487a"
+    }
+  ]
+}

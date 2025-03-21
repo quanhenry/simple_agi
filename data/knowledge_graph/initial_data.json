@@ -1,0 +1,259 @@
+{
+    "entities": [
+      {
+        "name": "Phân số",
+        "type": "concept",
+        "description": "Phân số là một số biểu diễn bằng tỷ số của hai số nguyên, bao gồm tử số và mẫu số.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Số thập phân",
+        "type": "concept",
+        "description": "Số thập phân là cách biểu diễn số không nguyên trong hệ thập phân, bao gồm phần nguyên và phần thập phân được ngăn cách bởi dấu phẩy hoặc dấu chấm.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Đại lượng",
+        "type": "concept",
+        "description": "Đại lượng là những thứ có thể đo lường được như độ dài, khối lượng, thời gian, nhiệt độ,...",
+        "confidence": 1.0
+      },
+      {
+        "name": "Đơn vị đo",
+        "type": "concept",
+        "description": "Đơn vị đo là những quy ước được sử dụng để đo các đại lượng, như mét cho độ dài, kilogram cho khối lượng, giây cho thời gian,...",
+        "confidence": 1.0
+      },
+      {
+        "name": "Vần điệu",
+        "type": "concept",
+        "description": "Vần điệu là sự lặp lại có quy luật của âm thanh trong thơ ca, tạo nên nhịp điệu và âm hưởng cho bài thơ.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Dấu câu",
+        "type": "concept",
+        "description": "Dấu câu là các ký hiệu được sử dụng trong viết để chỉ ra cấu trúc, ngắt nghỉ và ngữ điệu của câu, như dấu chấm, dấu phẩy, dấu chấm hỏi,...",
+        "confidence": 1.0
+      },
+      {
+        "name": "Danh từ",
+        "type": "concept",
+        "description": "Danh từ là từ dùng để chỉ người, vật, hiện tượng, khái niệm,...",
+        "confidence": 1.0
+      },
+      {
+        "name": "Động từ",
+        "type": "concept",
+        "description": "Động từ là từ chỉ hành động, trạng thái, hay sự biến đổi của người, vật, hiện tượng,...",
+        "confidence": 1.0
+      },
+      {
+        "name": "Tính từ",
+        "type": "concept",
+        "description": "Tính từ là từ chỉ tính chất, đặc điểm của người, vật, sự việc, hiện tượng,...",
+        "confidence": 1.0
+      },
+      {
+        "name": "Truyện cổ tích",
+        "type": "concept",
+        "description": "Truyện cổ tích là những câu chuyện dân gian, thường có yếu tố thần kỳ, được truyền miệng từ thế hệ này sang thế hệ khác.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Ca dao",
+        "type": "concept",
+        "description": "Ca dao là những bài thơ dân gian Việt Nam, thường có vần điệu, được sáng tác và lưu truyền trong nhân dân.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Tục ngữ",
+        "type": "concept",
+        "description": "Tục ngữ là những câu nói ngắn gọn, súc tích, chứa đựng kinh nghiệm, bài học của người xưa.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Chính tả",
+        "type": "concept",
+        "description": "Chính tả là cách viết đúng của từ ngữ theo quy định chung của ngôn ngữ.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Tốc độ đọc",
+        "type": "concept",
+        "description": "Tốc độ đọc là số lượng từ đọc được trong một đơn vị thời gian, thường là số từ trên phút.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Đoạn văn",
+        "type": "concept",
+        "description": "Đoạn văn là một nhóm câu liên quan đến cùng một ý tưởng hoặc chủ đề, thường được phân tách bằng dấu xuống dòng.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Số đếm",
+        "type": "concept",
+        "description": "Số đếm là các số dùng để đếm số lượng đối tượng, bắt đầu từ 1 và tăng dần.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Hỗn số",
+        "type": "concept",
+        "description": "Hỗn số là số gồm phần nguyên và phần phân số, ví dụ: 2 1/3.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Đồng hồ",
+        "type": "concept",
+        "description": "Đồng hồ là thiết bị dùng để đo thời gian, có kim giờ, kim phút và kim giây.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Lịch",
+        "type": "concept",
+        "description": "Lịch là hệ thống tổ chức thời gian thành ngày, tuần, tháng, năm.",
+        "confidence": 1.0
+      },
+      {
+        "name": "Tiền tệ",
+        "type": "concept",
+        "description": "Tiền tệ là phương tiện thanh toán, có giá trị quy ước được sử dụng để mua bán hàng hóa và dịch vụ.",
+        "confidence": 1.0
+      }
+    ],
+    "relations": [
+      {
+        "source": "Phân số",
+        "target": "Số tự nhiên",
+        "relation_type": "relates_to",
+        "description": "Phân số được biểu diễn bằng tỷ số của hai số tự nhiên.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Số thập phân",
+        "target": "Phân số",
+        "relation_type": "relates_to",
+        "description": "Số thập phân là cách biểu diễn khác của phân số có mẫu số là lũy thừa của 10.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Đơn vị đo",
+        "target": "Đại lượng",
+        "relation_type": "measures",
+        "description": "Đơn vị đo được sử dụng để đo các đại lượng.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Vần điệu",
+        "target": "Thơ",
+        "relation_type": "is_property_of",
+        "description": "Vần điệu là một đặc tính quan trọng của thơ.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Dấu câu",
+        "target": "Viết",
+        "relation_type": "is_used_in",
+        "description": "Dấu câu được sử dụng trong kỹ năng viết.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Danh từ",
+        "target": "Ngữ pháp",
+        "relation_type": "is_part_of",
+        "description": "Danh từ là một phần của ngữ pháp.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Động từ",
+        "target": "Ngữ pháp",
+        "relation_type": "is_part_of",
+        "description": "Động từ là một phần của ngữ pháp.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Tính từ",
+        "target": "Ngữ pháp",
+        "relation_type": "is_part_of",
+        "description": "Tính từ là một phần của ngữ pháp.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Truyện cổ tích",
+        "target": "Văn học",
+        "relation_type": "is_type_of",
+        "description": "Truyện cổ tích là một thể loại của văn học.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Ca dao",
+        "target": "Văn học",
+        "relation_type": "is_type_of",
+        "description": "Ca dao là một thể loại của văn học dân gian.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Tục ngữ",
+        "target": "Văn học",
+        "relation_type": "is_type_of",
+        "description": "Tục ngữ là một thể loại của văn học dân gian.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Chính tả",
+        "target": "Viết",
+        "relation_type": "is_aspect_of",
+        "description": "Chính tả là một khía cạnh quan trọng của kỹ năng viết.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Tốc độ đọc",
+        "target": "Đọc hiểu",
+        "relation_type": "affects",
+        "description": "Tốc độ đọc ảnh hưởng đến khả năng đọc hiểu.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Đoạn văn",
+        "target": "Viết",
+        "relation_type": "is_component_of",
+        "description": "Đoạn văn là thành phần cơ bản của bài viết.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Số đếm",
+        "target": "Số tự nhiên",
+        "relation_type": "is_subset_of",
+        "description": "Số đếm là tập con của số tự nhiên, bắt đầu từ 1.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Hỗn số",
+        "target": "Phân số",
+        "relation_type": "relates_to",
+        "description": "Hỗn số có thể chuyển đổi thành phân số và ngược lại.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Đồng hồ",
+        "target": "Đo lường",
+        "relation_type": "is_tool_for",
+        "description": "Đồng hồ là công cụ để đo lường thời gian.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Lịch",
+        "target": "Đo lường",
+        "relation_type": "is_tool_for",
+        "description": "Lịch là công cụ để đo lường và tổ chức thời gian theo ngày, tháng, năm.",
+        "confidence": 1.0
+      },
+      {
+        "source": "Tiền tệ",
+        "target": "Đo lường",
+        "relation_type": "is_tool_for",
+        "description": "Tiền tệ là công cụ để đo lường giá trị kinh tế.",
+        "confidence": 1.0
+      }
+    ]
+  }
