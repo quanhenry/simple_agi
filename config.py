@@ -1,5 +1,5 @@
 """
-Cấu hình dự án SimpleAGI
+Cấu hình dự án SimpleAGI cho dạy Toán lớp 1
 """
 
 import os
@@ -28,11 +28,16 @@ KB_CONFIG = {
 }
 
 # Thiết lập Web Scraper
+USER_AGENT = "SimpleAGI-Math/1.0 (educational purposes)"
+TRUSTED_DOMAINS = ["khanacademy.org", "mathisfun.com", "education.com", "mathplayground.com", "vi.wikipedia.org"]
+REQUEST_TIMEOUT = 10  # seconds
+
 WEB_SCRAPER_CONFIG = {
     'max_pages': 3,
-    'timeout': 10,
-    'user_agent': 'SimpleAGI/0.1 (educational purposes)',
-    'search_engine': 'mock'  # 'mock' hoặc 'google'
+    'timeout': REQUEST_TIMEOUT,
+    'user_agent': USER_AGENT,
+    'search_engine': 'mock',  # 'mock' hoặc 'google'
+    'trusted_domains': TRUSTED_DOMAINS
 }
 
 # API Keys
@@ -51,6 +56,9 @@ LEARNER_CONFIG = {
     'similarity_threshold': 0.8
 }
 
+# Độ tin cậy tối thiểu
+MIN_CONFIDENCE = 0.6
+
 # Thiết lập UI
 UI_CONFIG = {
     'web': {
@@ -66,3 +74,22 @@ INFO_COLLECTOR_CONFIG = {
     'min_sources': 2,
     'timeout': 30
 }
+
+# Cấu trúc tri thức toán học lớp 1
+MATH_CATEGORIES = {
+    "counting": ["count_objects", "number_sequence", "before_after"],
+    "operations": ["addition", "subtraction", "simple_word_problems"],
+    "comparison": ["greater_than", "less_than", "equal_to"],
+    "place_value": ["ones", "tens", "hundreds"],
+    "measurement": ["length", "weight", "time", "money"],
+    "geometry": ["shapes", "patterns"]
+}
+
+# Định nghĩa các mối quan hệ đặc thù cho toán học
+MATH_RELATIONS = [
+    "prerequisite_for",  # Kiến thức A là điều kiện tiên quyết cho B
+    "example_of",        # A là ví dụ của B
+    "solution_for",      # A là giải pháp cho B
+    "visualization_of",  # A là hình ảnh minh họa của B
+    "formula_for"        # A là công thức cho B
+]

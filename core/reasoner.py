@@ -1,10 +1,11 @@
 """
-Reasoner - Module suy luận, tạo câu trả lời từ kiến thức
+Reasoner - Module suy luận, tạo câu trả lời từ kiến thức, chuyên biệt cho toán lớp 1
 """
 
 import logging
 import time
 import random
+import re
 from typing import List, Dict, Tuple, Any
 
 import config
@@ -12,7 +13,7 @@ from utils.nlp_utils import extract_keywords, text_similarity
 
 class Reasoner:
     """
-    Module suy luận dựa trên cơ sở kiến thức để trả lời câu hỏi
+    Module suy luận dựa trên cơ sở kiến thức để trả lời câu hỏi, tập trung vào toán lớp 1
     """
     
     def __init__(self, knowledge_base):
@@ -121,6 +122,34 @@ class Reasoner:
         self.logger.debug(f"Độ liên quan: max={max_relevance:.2f}, avg={avg_relevance:.2f}, final={final_relevance:.2f}")
         return final_relevance
     
+    def solve_math_problem(self, query: str, kb_results: List[Tuple[str, Dict, float]]) -> Dict:
+        """
+        Giải quyết bài toán lớp 1
+        
+        Args:
+            query: Câu hỏi toán học
+            kb_results: Kết quả từ Knowledge Base
+        
+        Returns:
+            dict: Kết quả bao gồm câu trả lời và giải thích
+        """
+        # Nhận dạng loại bài toán
+        problem_type = self._identify_math_problem_type(query)
+        
+        # Trích xuất số từ câu hỏi
+        numbers = self._extract_numbers(query)
+        
+        # Giải quyết dựa vào loại bài toán
+        if problem_type == "addition":
+            return self._solve_addition(numbers, query)
+        elif problem_type == "subtraction":
+            return self._solve_subtraction(numbers, query)
+        elif problem_type == "comparison":
+            return self._solve_comparison(numbers, query)
+        else:
+            # Tìm kiếm trong KB nếu không nhận dạng được loại toán
+            return self._find_answer_in_kb(query, kb_results)
+    
     def _classify_question(self, query: str) -> str:
         """
         Phân loại loại câu hỏi
@@ -185,6 +214,209 @@ class Reasoner:
             return self._answer_list(query, node_contents), confidence
         else:
             return self._answer_information(query, node_contents), confidence
+    
+    def _identify_math_problem_type(self, query: str) -> str:
+        """Xác định loại bài toán lớp 1"""
+        query_lower = query.lower()
+        
+        # Từ khóa cho từng loại toán
+        addition_keywords = ["cộng", "tổng", "thêm", "tất cả", "có bao nhiêu", "+"]
+        subtraction_keywords = ["trừ", "hiệu", "bớt", "còn lại", "mất đi", "vẫn còn", "-"]
+        comparison_keywords = ["hơn", "kém", "nhiều hơn", "ít hơn", "lớn hơn", "nhỏ hơn", "so sánh"]
+        
+        # Xác định loại toán
+        if "+" in query or any(keyword in query_lower for keyword in addition_keywords):
+            return "addition"
+        elif "-" in query or any(keyword in query_lower for keyword in subtraction_keywords):
+            return "subtraction"
+        elif any(keyword in query_lower for keyword in comparison_keywords):
+            return "comparison"
+        else:
+            return "unknown"
+    
+    def _extract_numbers(self, query: str) -> List[int]:
+        """Trích xuất các số từ câu hỏi"""
+        import re
+        
+        # Tìm tất cả các số trong câu hỏi
+        numbers = re.findall(r'\d+', query)
+        
+        # Chuyển về số nguyên
+        return [int(num) for num in numbers]
+    
+    def _solve_addition(self, numbers: List[int], query: str) -> Dict:
+        """Giải bài toán cộng"""
+        if len(numbers) < 2:
+            return {
+                "answer": "Tôi không tìm thấy đủ số để thực hiện phép cộng.",
+                "confidence": 0.5
+            }
+        
+        # Lấy 2 số đầu tiên để cộng
+        operands = numbers[:2]
+        result = sum(operands)
+        explanation = f"{operands[0]} + {operands[1]} = {result}"
+        
+        answer = f"Kết quả phép tính {operands[0]} + {operands[1]} = {result}."
+        
+        if "tại sao" in query.lower() or "vì sao" in query.lower() or "giải thích" in query.lower():
+            answer += f"\n\nGiải thích: Để tính {operands[0]} + {operands[1]}, chúng ta cộng {operands[0]} và {operands[1]} lại với nhau và được kết quả là {result}."
+            
+            # Thêm giải thích cụ thể cho học sinh lớp 1
+            if operands[0] <= 10 and operands[1] <= 10:
+                answer += f"\n\nChúng ta có thể hình dung bằng cách đếm: {' + '.join(['●' * operands[0], '●' * operands[1]])} = {'●' * result}."
+        
+        return {
+            "answer": answer,
+            "explanation": explanation,
+            "operation": "addition",
+            "numbers": operands,
+            "result": result,
+            "confidence": 0.9
+        }
+    
+    def _solve_subtraction(self, numbers: List[int], query: str) -> Dict:
+        """Giải bài toán trừ"""
+        if len(numbers) < 2:
+            return {
+                "answer": "Tôi không tìm thấy đủ số để thực hiện phép trừ.",
+                "confidence": 0.5
+            }
+        
+        # Lấy 2 số đầu tiên để trừ
+        operands = numbers[:2]
+        result = operands[0] - operands[1]
+        explanation = f"{operands[0]} - {operands[1]} = {result}"
+        
+        answer = f"Kết quả phép tính {operands[0]} - {operands[1]} = {result}."
+        
+        if "tại sao" in query.lower() or "vì sao" in query.lower() or "giải thích" in query.lower():
+            answer += f"\n\nGiải thích: Để tính {operands[0]} - {operands[1]}, chúng ta lấy {operands[0]} trừ đi {operands[1]} và được kết quả là {result}."
+            
+            # Thêm giải thích cụ thể cho học sinh lớp 1
+            if operands[0] <= 20:
+                dots = '●' * operands[0]
+                crossed = '●' * operands[1]
+                remaining = '●' * result
+                answer += f"\n\nChúng ta có thể hình dung: {dots} trừ đi {crossed} còn lại {remaining}."
+        
+        return {
+            "answer": answer,
+            "explanation": explanation,
+            "operation": "subtraction",
+            "numbers": operands,
+            "result": result,
+            "confidence": 0.9
+        }
+    
+    def _solve_comparison(self, numbers: List[int], query: str) -> Dict:
+        """Giải bài toán so sánh"""
+        if len(numbers) < 2:
+            return {
+                "answer": "Tôi không tìm thấy đủ số để thực hiện phép so sánh.",
+                "confidence": 0.5
+            }
+        
+        # Lấy 2 số đầu tiên để so sánh
+        num1, num2 = numbers[0], numbers[1]
+        
+        if num1 > num2:
+            difference = num1 - num2
+            explanation = f"{num1} > {num2}, {num1} lớn hơn {num2} là {difference}"
+            answer = f"{num1} lớn hơn {num2} là {difference}."
+        elif num1 < num2:
+            difference = num2 - num1
+            explanation = f"{num1} < {num2}, {num1} nhỏ hơn {num2} là {difference}"
+            answer = f"{num1} nhỏ hơn {num2} là {difference}."
+        else:
+            explanation = f"{num1} = {num2}, hai số bằng nhau"
+            answer = f"{num1} bằng {num2}."
+        
+        if "tại sao" in query.lower() or "vì sao" in query.lower() or "giải thích" in query.lower():
+            answer += f"\n\nGiải thích: Chúng ta so sánh hai số {num1} và {num2}."
+            if num1 != num2:
+                larger = max(num1, num2)
+                smaller = min(num1, num2)
+                diff = larger - smaller
+                answer += f" Vì {larger} - {smaller} = {diff}, nên {larger} lớn hơn {smaller} là {diff} đơn vị."
+            else:
+                answer += f" Vì hai số có giá trị giống nhau, nên chúng bằng nhau."
+        
+        return {
+            "answer": answer,
+            "explanation": explanation,
+            "operation": "comparison",
+            "numbers": [num1, num2],
+            "result": difference if num1 != num2 else 0,
+            "comparison": ">" if num1 > num2 else ("<" if num1 < num2 else "="),
+            "confidence": 0.9
+        }
+    
+    def _find_answer_in_kb(self, query: str, kb_results: List[Tuple[str, Dict, float]]) -> Dict:
+        """Tìm câu trả lời trong KB nếu không nhận dạng được phép tính"""
+        if not kb_results:
+            return {
+                "answer": "Tôi không tìm thấy thông tin để trả lời câu hỏi toán học này.",
+                "confidence": 0.3
+            }
+        
+        # Sắp xếp kb_results theo độ liên quan
+        kb_results.sort(key=lambda x: x[2], reverse=True)
+        
+        # Lấy node liên quan nhất
+        node_id, attrs, relevance = kb_results[0]
+        
+        if attrs.get("type") == "knowledge" and "description" in attrs:
+            # Nếu đây là node kiến thức cụ thể
+            answer = f"{attrs.get('description', '')}"
+            
+            # Nếu là phép cộng/trừ cụ thể
+            if attrs.get("name", "").startswith("Phép cộng") or attrs.get("name", "").startswith("Phép trừ"):
+                # Nếu mô tả dạng "a+b=c" hoặc "a-b=c"
+                math_expression = attrs.get("description", "")
+                
+                if "+" in math_expression:
+                    parts = math_expression.split("+")
+                    if len(parts) == 2 and "=" in parts[1]:
+                        num1 = parts[0].strip()
+                        num2, result = parts[1].split("=")[0].strip(), parts[1].split("=")[1].strip()
+                        answer = f"Kết quả của {num1} + {num2} = {result}"
+                
+                elif "-" in math_expression:
+                    parts = math_expression.split("-")
+                    if len(parts) == 2 and "=" in parts[1]:
+                        num1 = parts[0].strip()
+                        num2, result = parts[1].split("=")[0].strip(), parts[1].split("=")[1].strip()
+                        answer = f"Kết quả của {num1} - {num2} = {result}"
+            
+            return {
+                "answer": answer,
+                "confidence": min(0.8, relevance),
+                "source": attrs.get("source", "knowledge_base"),
+                "success": True
+            }
+        
+        # Không tìm thấy câu trả lời cụ thể
+        # Kiểm tra các phép tính đơn giản
+        numbers = self._extract_numbers(query)
+        if len(numbers) >= 2:
+            # Thử đoán phép tính
+            if "+" in query or "cộng" in query.lower() or "tổng" in query.lower():
+                return self._solve_addition(numbers, query)
+            elif "-" in query or "trừ" in query.lower() or "hiệu" in query.lower() or "còn lại" in query.lower():
+                return self._solve_subtraction(numbers, query)
+        
+        # Trả về thông tin chung
+        answer = "Tôi không đủ thông tin để trả lời câu hỏi toán học này một cách chính xác. "
+        
+        if len(kb_results) > 0:
+            answer += f"Có thể bạn đang hỏi về {kb_results[0][1].get('name', '')}? Vui lòng cung cấp thêm thông tin để tôi có thể giúp bạn."
+        
+        return {
+            "answer": answer,
+            "confidence": 0.3,
+            "success": False
+        }
     
     def _answer_definition(self, query: str, node_contents: List[Dict]) -> str:
         """Trả lời câu hỏi định nghĩa"""
