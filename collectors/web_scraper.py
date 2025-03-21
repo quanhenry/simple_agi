@@ -92,39 +92,68 @@ class WebScraper:
         # Xác định chủ đề toán học từ câu truy vấn
         topics = self._identify_math_topics(query)
         
-        # Lấy URL liên quan đến các chủ đề
+        # Nguồn tài liệu toán học lớp 1 đáng tin cậy
         math_resources = {
             "addition": [
                 "https://www.mathplayground.com/grade_1_games.html",
                 "https://www.khanacademy.org/math/arithmetic/arith-review-add-subtract",
                 "https://www.education.com/resources/first-grade/addition/",
-                "https://www.ixl.com/math/grade-1/addition"
+                "https://www.ixl.com/math/grade-1/addition",
+                "https://www.splashlearn.com/math/addition-games-for-1st-graders"
             ],
             "subtraction": [
                 "https://www.mathisfun.com/numbers/subtraction.html",
                 "https://www.education.com/resources/first-grade/subtraction/",
                 "https://www.ixl.com/math/grade-1/subtraction",
-                "https://www.mathplayground.com/math_games.html"
+                "https://www.mathplayground.com/math_games.html",
+                "https://www.splashlearn.com/math/subtraction-games-for-1st-graders"
             ],
             "counting": [
                 "https://www.education.com/resources/first-grade/counting-numbers/",
                 "https://www.ixl.com/math/grade-1/counting",
-                "https://www.mathgames.com/counting"
+                "https://www.mathgames.com/counting",
+                "https://www.splashlearn.com/math/counting-games-for-1st-graders"
             ],
             "shapes": [
                 "https://www.mathisfun.com/geometry/shapes.html",
                 "https://www.education.com/resources/first-grade/geometry/",
-                "https://www.ixl.com/math/grade-1/shapes"
+                "https://www.ixl.com/math/grade-1/shapes",
+                "https://www.splashlearn.com/math/geometry-games-for-1st-graders"
             ],
             "comparison": [
                 "https://www.ixl.com/math/grade-1/comparing",
                 "https://www.mathisfun.com/comparing-numbers.html",
-                "https://www.education.com/resources/comparing-numbers/"
+                "https://www.education.com/resources/comparing-numbers/",
+                "https://www.splashlearn.com/math/comparison-games-for-1st-graders"
             ],
             "word_problems": [
                 "https://www.mathplayground.com/wpdatabase/wpindex.html",
                 "https://www.ixl.com/math/grade-1/word-problems",
-                "https://www.education.com/resources/first-grade/word-problems/"
+                "https://www.education.com/resources/first-grade/word-problems/",
+                "https://www.splashlearn.com/math/word-problem-games-for-1st-graders"
+            ],
+            "number_patterns": [
+                "https://www.ixl.com/math/grade-1/number-patterns",
+                "https://www.education.com/resources/number-patterns/",
+                "https://www.splashlearn.com/math/number-pattern-games-for-1st-graders"
+            ],
+            "place_value": [
+                "https://www.mathisfun.com/place-value.html",
+                "https://www.ixl.com/math/grade-1/place-value",
+                "https://www.education.com/resources/place-value/",
+                "https://www.splashlearn.com/math/place-value-games-for-1st-graders"
+            ],
+            "time": [
+                "https://www.mathisfun.com/time.html",
+                "https://www.ixl.com/math/grade-1/time",
+                "https://www.education.com/resources/time/",
+                "https://www.splashlearn.com/math/time-games-for-1st-graders"
+            ],
+            "money": [
+                "https://www.mathisfun.com/money/index.html",
+                "https://www.ixl.com/math/grade-1/money",
+                "https://www.education.com/resources/money/",
+                "https://www.splashlearn.com/math/money-games-for-1st-graders"
             ]
         }
         
@@ -140,7 +169,8 @@ class WebScraper:
                 "https://www.mathisfun.com/numbers/index.html",
                 "https://www.ixl.com/math/grade-1",
                 "https://www.education.com/resources/first-grade/math/",
-                "https://www.khanacademy.org/math/early-math"
+                "https://www.khanacademy.org/math/early-math",
+                "https://www.splashlearn.com/math/games-for-1st-graders"
             ]
             urls.extend(default_urls)
         
@@ -148,7 +178,7 @@ class WebScraper:
         filtered_urls = []
         for url in urls:
             domain = urlparse(url).netloc
-            if any(trusted in domain for trusted in config.TRUSTED_DOMAINS):
+            if domain and any(trusted in domain for trusted in config.TRUSTED_DOMAINS):
                 filtered_urls.append(url)
                 
                 if len(filtered_urls) >= max_results:
@@ -163,12 +193,16 @@ class WebScraper:
         
         # Từ khóa cho từng chủ đề
         topic_keywords = {
-            "addition": ["cộng", "tổng", "thêm", "cộng vào", "+"],
-            "subtraction": ["trừ", "hiệu", "bớt", "còn lại", "-"],
-            "counting": ["đếm", "số", "bao nhiêu"],
-            "shapes": ["hình", "vuông", "tròn", "tam giác"],
-            "comparison": ["lớn hơn", "nhỏ hơn", "so sánh", ">", "<"],
-            "word_problems": ["bài toán", "có lời văn", "tình huống"]
+            "addition": ["cộng", "tổng", "thêm", "cộng vào", "được bao nhiêu", "+"],
+            "subtraction": ["trừ", "hiệu", "bớt", "còn lại", "mất đi", "vẫn còn", "-"],
+            "counting": ["đếm", "số", "bao nhiêu", "đếm đến"],
+            "shapes": ["hình", "vuông", "tròn", "tam giác", "chữ nhật", "hình học"],
+            "comparison": ["lớn hơn", "nhỏ hơn", "so sánh", "bằng nhau", ">", "<", "="],
+            "word_problems": ["bài toán", "có lời văn", "tình huống"],
+            "number_patterns": ["dãy số", "quy luật", "tiếp theo", "mẫu số"],
+            "place_value": ["hàng đơn vị", "hàng chục", "hàng trăm", "giá trị"],
+            "time": ["đồng hồ", "giờ", "phút", "thời gian"],
+            "money": ["tiền", "đồng", "giá", "mua", "bán"]
         }
         
         # Tìm các chủ đề phù hợp
@@ -179,7 +213,10 @@ class WebScraper:
         
         # Nếu không tìm thấy chủ đề nào, trả về mặc định
         if not topics:
-            topics = ["addition"]  # Mặc định là phép cộng
+            if any(c.isdigit() for c in query_lower):
+                topics = ["addition"]  # Mặc định là phép cộng nếu có số
+            else:
+                topics = ["counting"]  # Mặc định là đếm nếu không có số
         
         return topics
     
@@ -254,7 +291,8 @@ class WebScraper:
         math_content_selectors = [
             ".math", ".mathematics", ".arithmetic", 
             "#math-content", "#lesson-content",
-            ".lesson", ".exercise", ".examples"
+            ".lesson", ".exercise", ".examples",
+            ".math-examples", ".math-practice", ".math-problems"
         ]
         
         # Tìm nội dung toán học trước
@@ -287,7 +325,11 @@ class WebScraper:
         
         # Làm sạch và cắt ngắn nội dung
         content = clean_text(content)
-        content = content[:5000]  # Giới hạn độ dài
+        
+        # Giới hạn độ dài nội dung để tránh dữ liệu quá lớn
+        max_content_length = 5000
+        if len(content) > max_content_length:
+            content = content[:max_content_length] + "..."
         
         return content
     
@@ -295,15 +337,16 @@ class WebScraper:
         """Trích xuất các thực thể liên quan đến toán học từ nội dung"""
         entities = []
         
-        # Trích xuất cụm từ khóa
-        keywords = extract_keywords(title + " " + content, max_keywords=20)
-        
         # Các từ khóa toán học lớp 1
         math_terms = [
             "số", "đếm", "cộng", "trừ", "tổng", "hiệu", "so sánh",
             "lớn hơn", "nhỏ hơn", "bằng", "hình", "đo lường",
-            "dài", "rộng", "tiền", "giờ", "phút"
+            "dài", "rộng", "tiền", "giờ", "phút", "đồng hồ",
+            "hàng đơn vị", "hàng chục", "hàng trăm"
         ]
+        
+        # Trích xuất cụm từ khóa
+        keywords = extract_keywords(title + " " + content, max_keywords=20)
         
         # Thêm các thực thể từ từ khóa trích xuất được
         for keyword in keywords:
@@ -323,16 +366,15 @@ class WebScraper:
             
             entities.append(entity)
         
-        # Thêm các thực thể phép tính cụ thể
+        # Tìm các biểu thức toán học trong nội dung
         math_expressions = self._extract_math_expressions(content)
         for expr in math_expressions:
-            if "=" in expr:
-                entity = {
-                    "name": expr,
-                    "type": "knowledge",
-                    "description": expr
-                }
-                entities.append(entity)
+            entity = {
+                "name": expr,
+                "type": "knowledge",
+                "description": expr
+            }
+            entities.append(entity)
         
         return entities
     
@@ -360,6 +402,37 @@ class WebScraper:
                             }
                             relations.append(relation)
         
+        # Tìm các mối quan hệ phép tính
+        math_expressions = self._extract_math_expressions(content)
+        for expr in math_expressions:
+            if "=" in expr:
+                # Tách phép tính thành các phần
+                parts = expr.split("=")
+                if len(parts) == 2:
+                    left_side = parts[0].strip()
+                    right_side = parts[1].strip()
+                    
+                    if "+" in left_side:
+                        operands = left_side.split("+")
+                        if len(operands) == 2:
+                            relation = {
+                                "source": operands[0].strip(),
+                                "target": right_side,
+                                "relation_type": "addition",
+                                "description": f"{operands[0].strip()} + {operands[1].strip()} = {right_side}"
+                            }
+                            relations.append(relation)
+                    elif "-" in left_side:
+                        operands = left_side.split("-")
+                        if len(operands) == 2:
+                            relation = {
+                                "source": operands[0].strip(),
+                                "target": right_side,
+                                "relation_type": "subtraction",
+                                "description": f"{operands[0].strip()} - {operands[1].strip()} = {right_side}"
+                            }
+                            relations.append(relation)
+        
         return relations
     
     def _extract_math_expressions(self, content: str) -> List[str]:
@@ -382,7 +455,7 @@ class WebScraper:
     
     def _determine_relation_type(self, entity1: str, entity2: str, content: str) -> Optional[str]:
         """Xác định loại mối quan hệ giữa hai thực thể"""
-        # Mối quan hệ đơn giản dựa trên khoảng cách trong văn bản
+        # Kiểm tra text giữa hai thực thể để xác định mối quan hệ
         entity1_pos = content.lower().find(entity1.lower())
         entity2_pos = content.lower().find(entity2.lower())
         
@@ -402,6 +475,12 @@ class WebScraper:
                 return "contains"
             elif "liên quan" in text_between:
                 return "relates_to"
+            elif "là" in text_between:
+                return "is_a"
+            elif "ví dụ" in text_between or "minh họa" in text_between:
+                return "example_of"
+            elif "trước" in text_between or "sau" in text_between:
+                return "sequence"
             else:
                 return "related_to"  # Mối quan hệ chung
         

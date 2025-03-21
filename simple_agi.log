@@ -936,3 +936,149 @@ jinja2.exceptions.TemplateNotFound: /Users/quannguyen/Downloads/AI-AGI/simple_ag
 2025-03-21 11:09:57,067 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 60 nodes và 69 edges
 2025-03-21 11:09:57,067 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 60 nodes và 69 edges
 2025-03-21 11:09:57,068 - SimpleAGI - ERROR - Lỗi khởi động: module 'config' has no attribute 'USER_AGENT'
+2025-03-21 11:50:02,900 - SimpleAGI - INFO - Khởi động Simple AGI
+2025-03-21 11:50:02,900 - SimpleAGI - INFO - Khởi tạo AGI Engine
+2025-03-21 11:50:02,901 - KnowledgeBase - INFO - Đã tải đồ thị kiến thức với 60 nodes và 69 edges
+2025-03-21 11:50:02,901 - KnowledgeBase - INFO - Knowledge Base đã khởi tạo với 60 nodes và 69 edges
+2025-03-21 11:50:02,901 - WebScraper - INFO - Web Scraper đã được khởi tạo
+2025-03-21 11:50:02,901 - ApiConnector - INFO - Google API được kích hoạt với key: AIzaS...
+2025-03-21 11:50:02,901 - ApiConnector - INFO - Đã khởi tạo Google Gemini client
+2025-03-21 11:50:02,901 - ApiConnector - INFO - API Connector đã được khởi tạo với các API: google
+2025-03-21 11:50:02,901 - InfoCollector - INFO - Information Collector đã được khởi tạo
+2025-03-21 11:50:02,901 - AGIEngine - INFO - AGI Engine đã được khởi tạo
+2025-03-21 11:50:02,901 - SimpleAGI - INFO - Khởi động giao diện web
+2025-03-21 11:50:02,902 - AGIWeb - INFO - AGIWeb đã được khởi tạo
+2025-03-21 11:50:02,903 - AGIWeb - INFO - Khởi động giao diện web tại http://0.0.0.0:8000
+2025-03-21 11:50:02,910 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.190:8000
+2025-03-21 11:50:02,910 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 11:50:04,838 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:04] "GET / HTTP/1.1" 200 -
+2025-03-21 11:50:04,846 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:04] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:50:04,847 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:04] "GET /api/history?limit=5 HTTP/1.1" 200 -
+2025-03-21 11:50:08,893 - AGIWeb - INFO - Nhận câu hỏi từ web: 2+3
+2025-03-21 11:50:08,893 - AGIEngine - INFO - Xử lý yêu cầu: 2+3
+2025-03-21 11:50:08,893 - AGIEngine - INFO - Xử lý bài toán: 2+3
+2025-03-21 11:50:08,893 - KnowledgeBase - INFO - Truy vấn KB với: 2+3
+2025-03-21 11:50:09,205 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:50:09,205 - AGIEngine - INFO - Đã xử lý bài toán trong 0.31 giây
+2025-03-21 11:50:09,205 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:09] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:50:09,211 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:09] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:50:14,748 - AGIWeb - INFO - Nhận câu hỏi từ web: 19+20
+2025-03-21 11:50:14,748 - AGIEngine - INFO - Xử lý yêu cầu: 19+20
+2025-03-21 11:50:14,748 - AGIEngine - INFO - Xử lý bài toán: 19+20
+2025-03-21 11:50:14,748 - KnowledgeBase - INFO - Truy vấn KB với: 19+20
+2025-03-21 11:50:15,005 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:50:15,005 - AGIEngine - INFO - Đã xử lý bài toán trong 0.26 giây
+2025-03-21 11:50:15,006 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:15] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:50:15,011 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:15] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:50:28,285 - AGIWeb - INFO - Nhận câu hỏi từ web: miêu tả con mèo
+2025-03-21 11:50:28,285 - AGIEngine - INFO - Xử lý yêu cầu: miêu tả con mèo
+2025-03-21 11:50:28,285 - KnowledgeBase - INFO - Truy vấn KB với: miêu tả con mèo
+2025-03-21 11:50:28,546 - KnowledgeBase - INFO - Tìm thấy 0 nodes liên quan
+2025-03-21 11:50:28,547 - AGIEngine - INFO - Không đủ thông tin, bắt đầu thu thập
+2025-03-21 11:50:28,547 - InfoCollector - INFO - Thu thập thông tin cho query: miêu tả con mèo
+2025-03-21 11:50:28,547 - InfoCollector - INFO - Bắt đầu thu thập từ Web (cần thêm 2 nguồn)
+2025-03-21 11:50:28,547 - WebScraper - INFO - Thu thập từ web cho query: miêu tả con mèo
+2025-03-21 11:50:28,547 - WebScraper - INFO - Tìm kiếm cho: miêu tả con mèo
+2025-03-21 11:50:32,939 - WebScraper - INFO - Đã thu thập được 1 thông tin từ web
+2025-03-21 11:50:32,939 - InfoCollector - INFO - Đã thu thập được 1 thông tin từ Web
+2025-03-21 11:50:32,939 - InfoCollector - INFO - Bắt đầu thu thập từ API (cần thêm 1 nguồn)
+2025-03-21 11:50:32,940 - ApiConnector - INFO - Thu thập từ API cho query: miêu tả con mèo
+2025-03-21 11:50:32,940 - ApiConnector - INFO - Đang truy vấn API: google
+2025-03-21 11:50:32,940 - ApiConnector - INFO - Đã cấu hình lại Google Gemini với API key
+2025-03-21 11:50:32,940 - ApiConnector - INFO - Đã tạo mô hình Gemini Pro
+2025-03-21 11:50:32,940 - ApiConnector - INFO - Đang gửi yêu cầu đến Gemini: miêu tả con mèo
+2025-03-21 11:50:39,146 - ApiConnector - INFO - Đã nhận phản hồi từ Gemini
+2025-03-21 11:50:39,146 - ApiConnector - INFO - Nhận được phản hồi dài 2700 ký tự
+2025-03-21 11:50:39,147 - ApiConnector - INFO - Đã xử lý phản hồi thành công với 4 entities
+2025-03-21 11:50:39,147 - ApiConnector - INFO - Đã thu thập được 1 kết quả từ google
+2025-03-21 11:50:39,147 - ApiConnector - INFO - Tổng cộng thu thập được 1 kết quả từ API
+2025-03-21 11:50:39,147 - InfoCollector - INFO - Đã thu thập được 1 thông tin từ API
+2025-03-21 11:50:39,147 - InfoCollector - INFO - Đã thu thập được tổng cộng 2 thông tin mới trong 10.60 giây
+2025-03-21 11:50:39,147 - InfoCollector - INFO - Chi tiết: Web=1, API=1
+2025-03-21 11:50:39,147 - AGIEngine - INFO - Học 2 thông tin mới
+2025-03-21 11:50:39,147 - Learner - INFO - Bắt đầu quá trình học với 2 thông tin mới
+2025-03-21 11:50:39,148 - Learner - WARNING - Không thể thêm quan hệ vì thiếu node: entity_5691af301a hoặc entity_7ee20315a1
+2025-03-21 11:50:39,148 - Learner - WARNING - Không thể thêm quan hệ vì thiếu node: entity_ff9cb899e2 hoặc entity_7ee20315a1
+2025-03-21 11:50:39,148 - Learner - WARNING - Không thể thêm quan hệ vì thiếu node: entity_7ee20315a1 hoặc entity_3bb96c2f87
+2025-03-21 11:50:39,148 - Learner - WARNING - Không thể thêm quan hệ vì thiếu node: entity_807504151d hoặc entity_0e0031137c
+2025-03-21 11:50:39,150 - KnowledgeBase - INFO - Đã lưu đồ thị kiến thức với 85 nodes và 93 edges
+2025-03-21 11:50:39,150 - KnowledgeBase - INFO - Truy vấn KB với: miêu tả con mèo
+2025-03-21 11:50:39,555 - KnowledgeBase - INFO - Tìm thấy 1 nodes liên quan
+2025-03-21 11:50:39,555 - Reasoner - INFO - Suy luận dựa trên 1 kết quả từ KB
+2025-03-21 11:50:39,555 - AGIEngine - INFO - Đã xử lý yêu cầu trong 11.27 giây
+2025-03-21 11:50:39,555 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:39] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:50:39,561 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:39] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:50:50,902 - AGIWeb - INFO - Nhận câu hỏi từ web: 4+4
+2025-03-21 11:50:50,903 - AGIEngine - INFO - Xử lý yêu cầu: 4+4
+2025-03-21 11:50:50,903 - AGIEngine - INFO - Xử lý bài toán: 4+4
+2025-03-21 11:50:50,903 - KnowledgeBase - INFO - Truy vấn KB với: 4+4
+2025-03-21 11:50:51,171 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:50:51,171 - AGIEngine - INFO - Đã xử lý bài toán trong 0.27 giây
+2025-03-21 11:50:51,171 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:51] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:50:51,178 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:50:51] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:50:56,586 - AGIWeb - INFO - Nhận câu hỏi từ web: 4 x 4
+2025-03-21 11:50:56,586 - AGIEngine - INFO - Xử lý yêu cầu: 4 x 4
+2025-03-21 11:50:56,587 - KnowledgeBase - INFO - Truy vấn KB với: 4 x 4
+2025-03-21 11:50:56,847 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:50:56,847 - AGIEngine - INFO - Không đủ thông tin, bắt đầu thu thập
+2025-03-21 11:50:56,847 - InfoCollector - INFO - Thu thập thông tin cho query: 4 x 4
+2025-03-21 11:50:56,847 - InfoCollector - INFO - Bắt đầu thu thập từ Web (cần thêm 2 nguồn)
+2025-03-21 11:50:56,847 - WebScraper - INFO - Thu thập từ web cho query: 4 x 4
+2025-03-21 11:50:56,847 - WebScraper - INFO - Tìm kiếm cho: 4 x 4
+2025-03-21 11:51:02,449 - WebScraper - INFO - Đã thu thập được 2 thông tin từ web
+2025-03-21 11:51:02,450 - InfoCollector - INFO - Đã thu thập được 2 thông tin từ Web
+2025-03-21 11:51:02,450 - InfoCollector - INFO - Đã thu thập được tổng cộng 2 thông tin mới trong 5.60 giây
+2025-03-21 11:51:02,450 - InfoCollector - INFO - Chi tiết: Web=2, API=0
+2025-03-21 11:51:02,450 - AGIEngine - INFO - Học 2 thông tin mới
+2025-03-21 11:51:02,450 - Learner - INFO - Bắt đầu quá trình học với 2 thông tin mới
+2025-03-21 11:51:02,457 - KnowledgeBase - INFO - Đã lưu đồ thị kiến thức với 92 nodes và 99 edges
+2025-03-21 11:51:02,457 - KnowledgeBase - INFO - Truy vấn KB với: 4 x 4
+2025-03-21 11:51:02,796 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:51:02,796 - Reasoner - INFO - Suy luận dựa trên 0 kết quả từ KB
+2025-03-21 11:51:02,796 - AGIEngine - INFO - Đã xử lý yêu cầu trong 6.21 giây
+2025-03-21 11:51:02,796 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:02] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:51:02,803 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:02] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:51:09,201 - AGIWeb - INFO - Nhận câu hỏi từ web: 99+99
+2025-03-21 11:51:09,202 - AGIEngine - INFO - Xử lý yêu cầu: 99+99
+2025-03-21 11:51:09,202 - AGIEngine - INFO - Xử lý bài toán: 99+99
+2025-03-21 11:51:09,202 - KnowledgeBase - INFO - Truy vấn KB với: 99+99
+2025-03-21 11:51:09,458 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:51:09,458 - AGIEngine - INFO - Đã xử lý bài toán trong 0.26 giây
+2025-03-21 11:51:09,459 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:09] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:51:09,465 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:09] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:51:12,667 - AGIWeb - INFO - Nhận câu hỏi từ web: 1+1
+2025-03-21 11:51:12,667 - AGIEngine - INFO - Xử lý yêu cầu: 1+1
+2025-03-21 11:51:12,667 - AGIEngine - INFO - Xử lý bài toán: 1+1
+2025-03-21 11:51:12,667 - KnowledgeBase - INFO - Truy vấn KB với: 1+1
+2025-03-21 11:51:12,926 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:51:12,926 - AGIEngine - INFO - Đã xử lý bài toán trong 0.26 giây
+2025-03-21 11:51:12,926 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:12] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:51:12,932 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:12] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:51:16,383 - AGIWeb - INFO - Nhận câu hỏi từ web: 233+12
+2025-03-21 11:51:16,384 - AGIEngine - INFO - Xử lý yêu cầu: 233+12
+2025-03-21 11:51:16,384 - AGIEngine - INFO - Xử lý bài toán: 233+12
+2025-03-21 11:51:16,384 - KnowledgeBase - INFO - Truy vấn KB với: 233+12
+2025-03-21 11:51:16,645 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:51:16,646 - AGIEngine - INFO - Đã xử lý bài toán trong 0.26 giây
+2025-03-21 11:51:16,646 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:16] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:51:16,652 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:16] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:51:19,640 - AGIWeb - INFO - Nhận câu hỏi từ web: 2324342+234243
+2025-03-21 11:51:19,640 - AGIEngine - INFO - Xử lý yêu cầu: 2324342+234243
+2025-03-21 11:51:19,640 - AGIEngine - INFO - Xử lý bài toán: 2324342+234243
+2025-03-21 11:51:19,640 - KnowledgeBase - INFO - Truy vấn KB với: 2324342+234243
+2025-03-21 11:51:19,899 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:51:19,943 - AGIEngine - INFO - Đã xử lý bài toán trong 0.26 giây
+2025-03-21 11:51:20,153 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:20] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:51:20,420 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:20] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:51:37,407 - AGIWeb - INFO - Nhận câu hỏi từ web: 55555+55555
+2025-03-21 11:51:37,407 - AGIEngine - INFO - Xử lý yêu cầu: 55555+55555
+2025-03-21 11:51:37,407 - AGIEngine - INFO - Xử lý bài toán: 55555+55555
+2025-03-21 11:51:37,407 - KnowledgeBase - INFO - Truy vấn KB với: 55555+55555
+2025-03-21 11:51:37,678 - KnowledgeBase - WARNING - Không tìm thấy từ khóa trong câu hỏi
+2025-03-21 11:51:37,679 - AGIEngine - INFO - Đã xử lý bài toán trong 0.27 giây
+2025-03-21 11:51:37,687 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:37] "POST /api/query HTTP/1.1" 200 -
+2025-03-21 11:51:37,710 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2025 11:51:37] "GET /api/stats HTTP/1.1" 200 -
+2025-03-21 11:51:58,367 - AGIWeb - INFO - Đã nhận tín hiệu thoát

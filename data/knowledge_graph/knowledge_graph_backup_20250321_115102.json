@@ -843,73 +843,6 @@
       "created_at": "2025-03-21T11:50:39.148551",
       "updated_at": "2025-03-21T11:50:39.148552",
       "id": "concept_d4451d0db2"
-    },
-    {
-      "name": "math",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-21T11:51:02.450919",
-      "updated_at": "2025-03-21T11:51:02.450946",
-      "id": "general_2a1206ec03"
-    },
-    {
-      "name": "grade 1 math games math playground",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-21T11:51:02.451039",
-      "updated_at": "2025-03-21T11:51:02.451047",
-      "id": "general_5c1ff607ac"
-    },
-    {
-      "name": "grade",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-21T11:51:02.451087",
-      "updated_at": "2025-03-21T11:51:02.451094",
-      "id": "general_e02c7e4c8e"
-    },
-    {
-      "name": "games",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-21T11:51:02.451122",
-      "updated_at": "2025-03-21T11:51:02.451128",
-      "id": "general_d5bb9a481b"
-    },
-    {
-      "name": "playground",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-21T11:51:02.451155",
-      "updated_at": "2025-03-21T11:51:02.451161",
-      "id": "general_7300ce7a74"
-    },
-    {
-      "name": "4 x 4",
-      "type": "context",
-      "created_at": "2025-03-21T11:51:02.451200",
-      "updated_at": "2025-03-21T11:51:02.451205",
-      "id": "context_c93a04f8fb"
-    },
-    {
-      "name": "khan academy",
-      "type": "general",
-      "description": "",
-      "source": "www.khanacademy.org",
-      "confidence": 0.7,
-      "created_at": "2025-03-21T11:51:02.451345",
-      "updated_at": "2025-03-21T11:51:02.451351",
-      "id": "general_a9feaa3cfc"
     }
   ],
   "links": [
@@ -1689,48 +1622,6 @@
       "created_at": "2025-03-21T11:50:39.148754",
       "source": "context_b87d1aba2d",
       "target": "concept_d4451d0db2"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-21T11:51:02.451226",
-      "source": "context_c93a04f8fb",
-      "target": "general_2a1206ec03"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-21T11:51:02.451258",
-      "source": "context_c93a04f8fb",
-      "target": "general_5c1ff607ac"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-21T11:51:02.451277",
-      "source": "context_c93a04f8fb",
-      "target": "general_e02c7e4c8e"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-21T11:51:02.451294",
-      "source": "context_c93a04f8fb",
-      "target": "general_d5bb9a481b"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-21T11:51:02.451309",
-      "source": "context_c93a04f8fb",
-      "target": "general_7300ce7a74"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-21T11:51:02.451375",
-      "source": "context_c93a04f8fb",
-      "target": "general_a9feaa3cfc"
     }
   ]
 }
