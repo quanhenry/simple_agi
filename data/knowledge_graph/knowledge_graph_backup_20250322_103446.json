@@ -270,7 +270,7 @@
       "source": "www.mathplayground.com",
       "confidence": 0.7,
       "created_at": "2025-03-22T10:34:19.955099",
-      "updated_at": "2025-03-22T10:35:19.244023",
+      "updated_at": "2025-03-22T10:34:19.955105",
       "id": "general_e02c7e4c8e"
     },
     {
@@ -280,7 +280,7 @@
       "source": "www.mathplayground.com",
       "confidence": 0.7,
       "created_at": "2025-03-22T10:34:19.955125",
-      "updated_at": "2025-03-22T10:35:19.244052",
+      "updated_at": "2025-03-22T10:34:19.955126",
       "id": "general_2a1206ec03"
     },
     {
@@ -290,7 +290,7 @@
       "source": "www.mathplayground.com",
       "confidence": 0.7,
       "created_at": "2025-03-22T10:34:19.955134",
-      "updated_at": "2025-03-22T10:35:19.244065",
+      "updated_at": "2025-03-22T10:34:19.955135",
       "id": "general_5c1ff607ac"
     },
     {
@@ -300,7 +300,7 @@
       "source": "www.mathplayground.com",
       "confidence": 0.7,
       "created_at": "2025-03-22T10:34:19.955140",
-      "updated_at": "2025-03-22T10:35:19.244077",
+      "updated_at": "2025-03-22T10:34:19.955140",
       "id": "general_d5bb9a481b"
     },
     {
@@ -310,7 +310,7 @@
       "source": "www.mathplayground.com",
       "confidence": 0.7,
       "created_at": "2025-03-22T10:34:19.955145",
-      "updated_at": "2025-03-22T10:35:19.244089",
+      "updated_at": "2025-03-22T10:34:19.955146",
       "id": "general_7300ce7a74"
     },
     {
@@ -327,22 +327,8 @@
       "source": "www.khanacademy.org",
       "confidence": 0.7,
       "created_at": "2025-03-22T10:34:19.955181",
-      "updated_at": "2025-03-22T10:35:19.244167",
+      "updated_at": "2025-03-22T10:34:19.955182",
       "id": "general_a9feaa3cfc"
-    },
-    {
-      "name": "4×4",
-      "type": "context",
-      "created_at": "2025-03-22T10:34:46.469778",
-      "updated_at": "2025-03-22T10:34:46.469784",
-      "id": "context_77d259b1d3"
-    },
-    {
-      "name": "2×2",
-      "type": "context",
-      "created_at": "2025-03-22T10:35:19.244100",
-      "updated_at": "2025-03-22T10:35:19.244102",
-      "id": "context_4c184ee8bb"
     }
   ],
   "links": [
@@ -638,90 +624,6 @@
       "relation_type": "related_to",
       "created_at": "2025-03-22T10:34:19.955186",
       "source": "context_bd5bb84c6d",
-      "target": "general_a9feaa3cfc"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469820",
-      "source": "context_77d259b1d3",
-      "target": "general_e02c7e4c8e"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469864",
-      "source": "context_77d259b1d3",
-      "target": "general_2a1206ec03"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469886",
-      "source": "context_77d259b1d3",
-      "target": "general_5c1ff607ac"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469905",
-      "source": "context_77d259b1d3",
-      "target": "general_d5bb9a481b"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469924",
-      "source": "context_77d259b1d3",
-      "target": "general_7300ce7a74"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469995",
-      "source": "context_77d259b1d3",
-      "target": "general_a9feaa3cfc"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244112",
-      "source": "context_4c184ee8bb",
-      "target": "general_e02c7e4c8e"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244125",
-      "source": "context_4c184ee8bb",
-      "target": "general_2a1206ec03"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244132",
-      "source": "context_4c184ee8bb",
-      "target": "general_5c1ff607ac"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244138",
-      "source": "context_4c184ee8bb",
-      "target": "general_d5bb9a481b"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244144",
-      "source": "context_4c184ee8bb",
-      "target": "general_7300ce7a74"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244176",
-      "source": "context_4c184ee8bb",
       "target": "general_a9feaa3cfc"
     }
   ]

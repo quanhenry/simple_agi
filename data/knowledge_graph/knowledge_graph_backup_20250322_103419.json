@@ -262,87 +262,6 @@
       "created_at": "2025-03-23T11:00:00",
       "updated_at": "2025-03-23T11:00:00",
       "id": "knowledge_8_divide_4"
-    },
-    {
-      "name": "grade",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-22T10:34:19.955099",
-      "updated_at": "2025-03-22T10:35:19.244023",
-      "id": "general_e02c7e4c8e"
-    },
-    {
-      "name": "math",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-22T10:34:19.955125",
-      "updated_at": "2025-03-22T10:35:19.244052",
-      "id": "general_2a1206ec03"
-    },
-    {
-      "name": "grade 1 math games math playground",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-22T10:34:19.955134",
-      "updated_at": "2025-03-22T10:35:19.244065",
-      "id": "general_5c1ff607ac"
-    },
-    {
-      "name": "games",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-22T10:34:19.955140",
-      "updated_at": "2025-03-22T10:35:19.244077",
-      "id": "general_d5bb9a481b"
-    },
-    {
-      "name": "playground",
-      "type": "general",
-      "description": "",
-      "source": "www.mathplayground.com",
-      "confidence": 0.7,
-      "created_at": "2025-03-22T10:34:19.955145",
-      "updated_at": "2025-03-22T10:35:19.244089",
-      "id": "general_7300ce7a74"
-    },
-    {
-      "name": "2 x 2",
-      "type": "context",
-      "created_at": "2025-03-22T10:34:19.955152",
-      "updated_at": "2025-03-22T10:34:19.955153",
-      "id": "context_bd5bb84c6d"
-    },
-    {
-      "name": "khan academy",
-      "type": "general",
-      "description": "",
-      "source": "www.khanacademy.org",
-      "confidence": 0.7,
-      "created_at": "2025-03-22T10:34:19.955181",
-      "updated_at": "2025-03-22T10:35:19.244167",
-      "id": "general_a9feaa3cfc"
-    },
-    {
-      "name": "4×4",
-      "type": "context",
-      "created_at": "2025-03-22T10:34:46.469778",
-      "updated_at": "2025-03-22T10:34:46.469784",
-      "id": "context_77d259b1d3"
-    },
-    {
-      "name": "2×2",
-      "type": "context",
-      "created_at": "2025-03-22T10:35:19.244100",
-      "updated_at": "2025-03-22T10:35:19.244102",
-      "id": "context_4c184ee8bb"
     }
   ],
   "links": [
@@ -390,6 +309,24 @@
       "created_at": "2025-03-23T10:00:00",
       "source": "concept_addition",
       "target": "concept_subtraction"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép nhân và phép chia là hai phép toán ngược nhau",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-23T10:00:00",
+      "source": "concept_multiplication",
+      "target": "concept_division"
+    },
+    {
+      "relation_type": "relates_to",
+      "description": "Phép nhân có thể được coi là phép cộng lặp lại nhiều lần",
+      "origin": "initialization",
+      "confidence": 1.0,
+      "created_at": "2025-03-23T10:00:00",
+      "source": "concept_multiplication",
+      "target": "concept_addition"
     },
     {
       "relation_type": "contains",
@@ -509,24 +446,6 @@
       "target": "knowledge_8_minus_3"
     },
     {
-      "relation_type": "relates_to",
-      "description": "Phép nhân và phép chia là hai phép toán ngược nhau",
-      "origin": "initialization",
-      "confidence": 1.0,
-      "created_at": "2025-03-23T10:00:00",
-      "source": "concept_multiplication",
-      "target": "concept_division"
-    },
-    {
-      "relation_type": "relates_to",
-      "description": "Phép nhân có thể được coi là phép cộng lặp lại nhiều lần",
-      "origin": "initialization",
-      "confidence": 1.0,
-      "created_at": "2025-03-23T10:00:00",
-      "source": "concept_multiplication",
-      "target": "concept_addition"
-    },
-    {
       "relation_type": "contains",
       "description": "Phép nhân bao gồm phép nhân 2×1",
       "origin": "manual_addition",
@@ -597,132 +516,6 @@
       "created_at": "2025-03-23T11:00:00",
       "source": "concept_division",
       "target": "knowledge_8_divide_4"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:19.955157",
-      "source": "context_bd5bb84c6d",
-      "target": "general_e02c7e4c8e"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:19.955164",
-      "source": "context_bd5bb84c6d",
-      "target": "general_2a1206ec03"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:19.955168",
-      "source": "context_bd5bb84c6d",
-      "target": "general_5c1ff607ac"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:19.955171",
-      "source": "context_bd5bb84c6d",
-      "target": "general_d5bb9a481b"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:19.955173",
-      "source": "context_bd5bb84c6d",
-      "target": "general_7300ce7a74"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:19.955186",
-      "source": "context_bd5bb84c6d",
-      "target": "general_a9feaa3cfc"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469820",
-      "source": "context_77d259b1d3",
-      "target": "general_e02c7e4c8e"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469864",
-      "source": "context_77d259b1d3",
-      "target": "general_2a1206ec03"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469886",
-      "source": "context_77d259b1d3",
-      "target": "general_5c1ff607ac"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469905",
-      "source": "context_77d259b1d3",
-      "target": "general_d5bb9a481b"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469924",
-      "source": "context_77d259b1d3",
-      "target": "general_7300ce7a74"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:34:46.469995",
-      "source": "context_77d259b1d3",
-      "target": "general_a9feaa3cfc"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244112",
-      "source": "context_4c184ee8bb",
-      "target": "general_e02c7e4c8e"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244125",
-      "source": "context_4c184ee8bb",
-      "target": "general_2a1206ec03"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244132",
-      "source": "context_4c184ee8bb",
-      "target": "general_5c1ff607ac"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244138",
-      "source": "context_4c184ee8bb",
-      "target": "general_d5bb9a481b"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244144",
-      "source": "context_4c184ee8bb",
-      "target": "general_7300ce7a74"
-    },
-    {
-      "confidence": 1.0,
-      "relation_type": "related_to",
-      "created_at": "2025-03-22T10:35:19.244176",
-      "source": "context_4c184ee8bb",
-      "target": "general_a9feaa3cfc"
     }
   ]
 }
